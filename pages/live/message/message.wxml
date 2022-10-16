@@ -1,0 +1,33 @@
+<!--分辨哪个是用户-->
+<block wx:for="{{newMsg}}" wx:key="index">
+  <view class="user-list">
+    <block wx:if="{{item.userA_id == friends._id}}">
+      <view class="left" bindtap="toChat" data-id="{{item._id}}" data-title="{{item.userB_nickName}}">
+        <view class="flex-row">
+          <!-- 展示未读消息区 -->
+          <view class="counter" wx:if="{{item.time > 0}}">{{item.time}}</view>
+          <image class="face" src="{{item.userB_faceImg}}"></image>
+          <view style="display: flex; flex-direction: column; justify-content: space-between;">
+            <view class="nick-name">{{item.userB_nickName}}</view>
+            <view class="msg">{{item.record[item.record.length-1].text}}</view>
+          </view>
+        </view>
+        <view class="time">{{item.record[item.record.length-1].time}}</view>
+      </view>
+    </block>
+
+    <block wx:if="{{item.userB_id == friends._id}}">
+      <view class="left" bindtap="toChat" data-id="{{item._id}}" data-title="{{item.userA_nickName}}">
+        <view class="flex-row">
+          <view class="counter" wx:if="{{item.time > 0}}">{{item.time}}</view>
+          <image class="face" src="{{item.userA_faceImg}}"></image>
+          <view>
+            <view class="nick-name">{{item.userA_nickName}}</view>
+            <view class="msg">{{item.record[item.record.length-1].text}}</view>
+          </view>
+        </view>
+        <view class="time">{{item.record[item.record.length-1].time}}</view>
+      </view>
+    </block>
+  </view>
+</block>

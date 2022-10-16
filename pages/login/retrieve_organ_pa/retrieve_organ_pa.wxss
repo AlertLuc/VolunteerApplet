@@ -1,0 +1,43 @@
+page{
+  background-color:#f8f8f8f8;
+  }
+
+input{
+  color: gray;
+  margin: 16rpx 32rpx;
+  padding: 15rpx;
+  border: 1px solid hsla(0, 5%, 96%, 0.925);
+  height: 20px;
+  width: 90%;
+  border-radius: 9px;
+  background-color:#ffffff;
+  margin-bottom: 15px; 
+}
+
+.con_error {
+  margin-left: 36rpx;
+  font-size: 23rpx;
+  color: red;
+}
+
+.con_right {
+  margin-left: 36rpx;
+  font-size: 23rpx;
+  color: green;
+}
+  .button
+{
+    height: 90rpx;
+    box-shadow: 0px 2px 30px 0px rgba(107, 100, 100, 0.12); 
+    width: 60%;
+    background: linear-gradient(160deg, #faa780, #fae8ad);
+    color: white;
+    border-radius: 60rpx;
+    margin-top: 30rpx;
+}
+
+.button::after {
+  border-radius: 90rpx;
+  border: 0;
+}
+

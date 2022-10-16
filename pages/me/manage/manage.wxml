@@ -1,0 +1,74 @@
+<scroll-view scroll-y class="scro_y">
+  <view wx:for="{{procress}}" wx:key="index" class="detail">
+
+    <!-- 项目图片 -->
+    <view class="img_clip">
+      <image src="{{item.imgUrl}}" class="bottom_img" mode="widthFix"></image>
+    </view>
+
+    <view class="box2">
+      <!--项目名称-->
+      <view>{{processData.name}}</view>
+      <!--时间地点人数-->
+      <view>、
+        <view class="header">活动基本信息：</view>
+        <!--公益时长-->
+        <view class="intro">活动的名称：{{item.paName}}</view>
+        <view class="intro">活动的地点：{{item.region}} {{item.address}}</view>
+        <view class="intro">项目开展日期：{{item.actBegin}}/{{item.actEnd}} 时间：{{item.timeActBegin}}-{{item.timeActEnd}}</view>
+        <view class="intro"> 报名开展日期：{{item.signBegin}}/{{item.signEnd}} 时间：{{item.timeSignBegin}}-{{item.timeSignEnd}}</view>
+
+        <view class="intro"></view>
+        <view class="end"></view>
+      </view>
+    </view>
+
+    <view class="box2">
+      <view>
+        <view>
+          <!--活动介绍-->
+          <view class="header">活动的主题:{{item.title}}</view>
+          <view class="intro">活动的目的:{{item.content}}</view>
+        </view>
+        <view>
+          <view class="intro">活动的标签：{{item.label}}</view>
+          <view class="intro">招募的岗位：{{item.work}}</view>
+          <view>
+            <view class="intro">活动负责人：{{item.leader.name}}</view>
+          </view>
+          <view class="end"></view>
+        </view>
+      </view>
+    </view>
+
+
+    <view class="box2" style="position: relative; left: 0rpx; top: -96rpx">
+      <view class="header" style="position: relative; left: 1rpx; top: 0rpx">已报名的志愿者人数：{{item.totalNum-item.residueNum}}/{{item.totalNum}}</view>
+
+      <view wx:for="{{item.volunteer}}" wx:key="index" wx:for-item="newitem" class="vol_total" wx:for-index="i" wx:if="{{i<3}}" class="vol_root">
+
+        <view class="vol_one">
+          <image class="vol_img" src="{{newitem.Img}}"></image>
+          <view class="vol_name">{{newitem.name}}</view>
+        </view>
+      </view>
+      <view class="end"></view>
+    </view>
+
+    <view class="bar">
+      <block>
+        <image src="{{item.state.signState!=2?'/images/QR.png':'/images/QR_NO.png'}}" class="rigth_img" bindtap="{{item.state.signState!=2?'getCode':'getCodeNO'}}" data-id="{{item._id}}" style="width: 49rpx; height: 49rpx; display: block; box-sizing: border-box" ></image>
+        <view class="test">发布签到</view>
+
+        <image src="/images/mana.png" class="rigth_img" bindtap="lookDetail" data-id="{{item._id}}" style="width: 50rpx; height: 50rpx; display: block; box-sizing: border-box"></image>
+        <view class="test">管理志愿者 </view>
+
+        <!--还未有志愿者报名的时候可以删除项目-->
+        <image src="/images/revise.png" class="rigth_img" bindtap="amend" data-id="{{item._id}}" style="width: 50rpx; height: 50rpx; display: block; box-sizing: border-box" bindtap="cancel"></image>
+        <view class="test">取消项目</view>
+      </block>
+    </view>
+
+  </view>
+
+</scroll-view>

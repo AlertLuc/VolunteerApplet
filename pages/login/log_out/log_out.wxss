@@ -1,0 +1,39 @@
+@import '../log_page//log_page.wxss';
+
+page{
+  position: absolute;
+  top: 5vh;
+}
+.card {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-radius: 20rpx;
+  height: 330rpx;
+  box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 12%);
+  padding: 10rpx;
+  margin-top: 40rpx;
+  margin-bottom: 70rpx;
+}
+
+.dividing-line {
+  width: 410rpx;
+  height: 1rpx;
+  background: rgba(0, 0, 0, 10%);
+  margin-left: 110px;
+}
+
+.button
+{
+    height: 90rpx;
+    box-shadow: 0px 2px 30px 0px rgba(107, 100, 100, 0.12); 
+    width: 60%;
+    background: linear-gradient(160deg, #faa780, #fae8ad);
+    color: white;
+    border-radius: 60rpx;
+    margin-top: 30rpx;
+}
+
+.button::after {
+  border-radius: 90rpx;
+  border: 0;
+}

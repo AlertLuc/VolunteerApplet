@@ -1,0 +1,128 @@
+.picker {
+  margin: 14rpx 0rpx;
+}
+
+
+.p_two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.p_total{
+  display: flex;
+  justify-content: space-around;
+}
+
+.choose_date {
+  display: flex;
+  justify-content: space-around;
+  color: #999999;
+  background-color: red;
+}
+
+.choose_time {
+  display: flex;
+  justify-content: space-around;
+  color: #999999;
+  background-color: hotpink;
+}
+
+.picker_two {
+  background-color: green;
+}
+
+input {
+  color: gray;
+  width: 500rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  font: medium;
+}
+
+.gender {
+  color: gray;
+  margin: 20rpx -6rpx;
+  padding: 8rpx;
+}
+
+.totalTime {
+  margin: 16rpx 32rpx;
+}
+
+.sign-setting-border {
+  margin-left: 3%;
+  width: 16%;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #999999;
+  font-size: 14px;
+  text-align: center;
+  font-family: -apple-system;
+  margin-bottom: 15px;
+  box-shadow: 30px 2px 30px 0px rgba(107, 100, 100, 0.12);
+}
+
+.selected {
+  /* color: rgb(90, 84, 84);
+    border:1px solid #852056; */
+  border-radius: 20rpx;
+  background: linear-gradient(to right, #f8bdae, #ffedbc);
+  color: white;
+}
+
+.selected::after {
+  border-radius: 90rpx;
+  border: 0;
+}
+
+/* ADD */
+.tittle {
+  display: flex;
+  margin: 30rpx;
+}
+
+.inp {
+  display: flex;
+}
+
+.card {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-radius: 20rpx;
+  box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 12%);
+  margin-top: 40rpx;
+  background-color: #ffffff;
+}
+
+.dividing-line {
+  width: 480rpx;
+  height: 1rpx;
+  background: rgba(0, 0, 0, 10%);
+  margin-left: 100px;
+}
+
+page {
+  background-color: #f8f8f8;
+}
+
+.button {
+  height: 90rpx;
+  width: 60%;
+  margin-top: 350rpx;
+  border-radius: 20rpx;
+  background: linear-gradient(160deg, #fca38d, #ffedbc);
+  color: white;
+  box-shadow: 0px 2px 30px 0px rgba(107, 100, 100, 0.12);
+}
+
+.button::after {
+  border-radius: 90rpx;
+  border: 0;
+}
+
+.time {
+  margin-left: -50rpx;
+}

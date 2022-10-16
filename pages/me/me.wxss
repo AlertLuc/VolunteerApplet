@@ -1,0 +1,399 @@
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: 100% 100%;
+  /*z-index 较大的元素会覆盖较小的元素在上层进行显示*/
+  z-index: -1;
+}
+
+
+/*margin 上-右-下-左*/
+.ID {
+  padding: 20rpx 20rpx;
+  border-radius: 20rpx;
+  box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 12%);
+  margin: 10rpx 50rpx 0rpx 50rpx;
+}
+
+.user {
+  margin-bottom: 8rpx;
+}
+
+.log_bottom {
+  width: 86.5%;
+  position: fixed;
+  margin: 0rpx 50rpx 0rpx 50rpx;
+}
+
+/* pages/user/user.wxss */
+.rectangle {
+  margin: auto;
+  width: 660rpx;
+  height: 232rpx;
+  border-radius: 20rpx;
+  background-color: #852026;
+  position: relative;
+  top: 100rpx;
+  box-shadow: 2rpx 4rpx 12rpx 4rpx rgba(0, 0, 0, 20%);
+}
+
+.progress-box {
+  width: 450rpx;
+  position: relative;
+  left: 160rpx;
+  top: -15rpx;
+}
+
+/* .text-box{
+  position: relative;
+  top: -200rpx;
+} */
+/* 卡片 */
+.card1 {
+  position: relative;
+  top: 140rpx;
+  margin: auto;
+  width: 660rpx;
+  height: 720rpx;
+  border-radius: 20rpx;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 12%);
+}
+
+.card2 {
+  position: relative;
+  top: 180rpx;
+  margin: auto;
+  width: 660rpx;
+  height: 124rpx;
+  border-radius: 20rpx;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 12%);
+  text-align: right;
+  line-height: 124rpx;
+}
+
+.icon-logout {
+  /* position: relative;
+  top: 40rpx;
+  left: 20rpx; */
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.logout {
+  margin-right: 15px;
+  font-size: 17;
+  font-weight: regular;
+  font-family: PingFang CS;
+}
+
+.divLine {
+  margin-top: 80x;
+  margin-left: 64px;
+  background: #E0E3DA;
+  width: 80%;
+  height: 1rpx;
+}
+
+
+
+.id-card {
+  margin: auto;
+  margin-top: 20rpx;
+  width: 660rpx;
+  height: 360rpx;
+  border-radius: 20rpx;
+  box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 12%);
+  
+}
+
+/* 头像 */
+.profile {
+  display: flex;
+  position: relative;
+  left: 20rpx;
+  top: 20rpx;
+  line-height: 120rpx;
+}
+
+.profile-img {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100rpx;
+}
+
+.user-name {
+  font-size: 17pt;
+  font-weight:initial;
+  color:  #585756;
+  margin-left: 30rpx;
+  width: 120rpx;
+  height: 120rpx;
+  overflow: hidden;
+}
+
+.user-id {
+  font-size: 26rpx;
+  color: #585756;
+  margin-bottom: 10rpx;
+  display: flex;
+}
+
+.time-recorder {
+  display: flex;
+  font-size: 26rpx;
+  margin-top: 20rpx;
+  color: #474646;
+}
+.font_bt{
+  position:relative;
+  margin: 2rpx;
+  top: -8rpx;
+  font-size: 24rpx;
+  font-weight: 520;
+}
+.font_id{
+  position:relative;
+  margin: 3rpx;
+  top: -7rpx;
+  font-size: 26rpx;
+  font-weight: 520;
+}
+
+.text {
+  /* font-size: 10px; */
+  color: #706f6f;
+  position: relative;
+  right: 350rpx;
+  bottom: -160rpx;
+}
+
+.card {
+  /* display: flex; */
+  width: 660rpx;
+  height: 330rpx;
+  margin: auto;
+  margin-top: 30rpx;
+  /* box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 12%); */
+  border-radius: 20rpx;
+}
+
+.card0 {
+  /* display: flex; */
+  width: 660rpx;
+  height: 270rpx;
+  margin: 30rpx auto;
+  /* box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 12%); */
+  border-radius: 20rpx;
+}
+
+.user_out {
+  display: flex;
+  width: 660rpx;
+  border-radius: 20rpx;
+  /* box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 12%); */
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 30rpx;
+  background: #ffffff;
+}
+
+.log_out {
+  margin: 30rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #3d3c3b;
+}
+
+.out_ever {
+  margin: 30rpx;
+  height: 45rpx;
+  width: 45rpx;
+  color: #3d3c3b;
+}
+
+/* 进度条 */
+.circle {
+  display: flex;
+  width: 240rpx;
+  height: 240rpx;
+  border-radius: 50%;
+  position: relative;
+  background: linear-gradient(160deg, #ff9f73, #fae8ad);
+  position: relative;
+  left: 380rpx;
+  bottom: 60rpx;
+}
+
+.left,
+.right {
+  width: 120rpx;
+  height: 240rpx;
+  position: absolute;
+  overflow: hidden;
+}
+
+.left-circle {
+  width: 120rpx;
+  height: 240rpx;
+  background: #ff9f73;
+  border-top-left-radius: 240rpx;
+  border-bottom-left-radius: 240rpx;
+  transition: all .5s;
+  transform-origin: right center;
+  /*
+  transform: rotate(180deg);
+  */
+  animation: progross1 2s linear forwards;
+  animation-delay: 2s;
+}
+
+.right-circle {
+  width: 120rpx;
+  height: 240rpx;
+  background: linear-gradient(160deg, #ff9f73, #fae8ad);
+  border-top-right-radius: 120px;
+  border-bottom-right-radius: 120px;
+  transition: all .5s;
+  transform-origin: left center;
+  /*
+  transform: rotate(-180deg);  
+  */
+  animation: progross2 2s linear forwards;
+}
+
+.right {
+  right: 0;
+}
+
+.inner {
+  width: 80px;
+  height: 80px;
+  background: white;
+  position: absolute;
+  z-index: 999;
+  border-radius: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 80px;
+  color: #999;
+  font-size: 20rpx;
+}
+
+.left:hover .left-circle {
+  transform: rotate(360deg);
+}
+
+.right:hover .right-circle {
+  transform: rotate(0deg);
+}
+
+.list {
+  display: flex;
+  /* margin: 30rpx; */
+  background: #ffffff;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  justify-content: space-between;
+
+}
+
+.list0 {
+  width: 100%;
+  height: 200rpx;
+  white-space:nowrap;
+  /* margin: 30rpx; */
+  margin-right: 41rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  border-radius: 10rpx;
+}
+
+.tittle2 {
+  margin: 30rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #3d3c3b;
+}
+
+.tittle1 {
+  margin: 30rpx;
+  margin-left: 76rpx;
+  color: #3d3c3b;
+}
+
+.customer_service {
+  width: 660rpx;
+  margin-top: 180rpx;
+  height: 104rpx;
+  background-color: #852026;
+}
+
+.tittle3 {
+  color: #FBD0AD;
+  font-size: 34rpx;
+  font-weight: bold;
+  line-height: 104rpx;
+}
+
+.model {
+  height: 185rpx;
+  width: 195rpx;
+}
+
+.model_total{
+  width: 185rpx;
+  height: 185rpx;
+  margin-right: 45rpx;
+  display: inline-block;
+}
+.bt_serve{
+  width: 100%;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  justify-content: space-between;
+  line-height: 1.3;
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #3d3c3b;
+}
+.bt_serve::after{
+  border: none;
+  border-radius: 0;
+}
+
+.card {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-radius: 20rpx;
+  height: 270rpx;
+  box-shadow: 0px 4px 6px 2px rgba(177, 173, 173, 0.12);
+  padding: 10rpx;
+  margin-top: 40rpx;
+  margin-bottom: 70rpx;
+}
+
+.read
+{
+  width: 80px;
+   height: 0px;
+  background: white;
+  position: absolute;
+  z-index: 999;
+
+  left: 20px;
+  top: 34px;
+  text-align: center;
+  line-height: 80px;
+  color: #999;
+  font-size: 20rpx;
+}

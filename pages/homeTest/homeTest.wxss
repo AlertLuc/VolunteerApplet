@@ -1,0 +1,330 @@
+/*轮播图*/
+.area {
+  display: relative;
+  flex-direction: column;
+  align-items: center;
+  height: 70vw;
+}
+
+.area::after {
+  content: '';
+  width: 120%;
+  height: 520rpx;
+  position: absolute;
+  z-index: -1;
+  left: -10%;
+  top: 0;
+  border-radius: 0 0 20% 20%;
+  background: linear-gradient(160deg, #ff9f73, #fae8ad);
+}
+
+.apart {
+
+  margin-top: 90rpx;
+}
+
+.logo-img {
+  border-radius: 50%;
+  height: 180rpx;
+  width: 190rpx;
+  background-color: rgb(250, 244, 195);
+
+  margin-left:100rpx;
+  margin-top: 60rpx;
+
+}
+.biaot
+{
+  width: 170px;
+  height: 90px;
+  margin-left: 30rpx;
+}
+
+
+/*搜索聊天*/
+.chat-img {
+  width: 56rpx;
+  height: 56rpx;
+  margin-left: 30rpx;
+
+}
+.chatNum {
+  font-size: 24rpx;
+  font-weight: 420;
+  color: aliceblue;
+  padding: 0rpx 12rpx;
+  background-color: #ff9f73;
+  border: 2rpx solid #ff9f73;
+  border-radius: 50rpx;
+  position: absolute;
+  top:82rpx;
+  left: 52rpx;
+}
+.search {
+  width: 180rpx;
+  height: 54rpx;
+  border-radius: 20rpx;
+  background: transparent;
+  border: 2rpx solid #ffffff;
+  margin-left: 20rpx;
+}
+.pl-s {
+  color: black;
+  font-size: 36rpx;
+  line-height: 56rpx;
+  margin-left: 20rpx;
+  padding: 1rpx;
+}
+/*轮播图底部的一栏*/
+.compus-me {
+  width: 580rpx;
+  height: 80rpx;
+  border-radius: 20rpx;
+  background: #ffffff;
+  border: 2rpx solid #ffffff;
+  margin-left: 80rpx;
+  margin-top: -130rpx;
+}
+
+.compus {
+  width: 580rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10rpx; 
+  box-shadow: 0px 2px 0px 2px rgba(187, 184, 184, 0.12);
+
+
+}
+.plh {
+  color: rgb(41, 39, 39);
+  font-size: 34rpx;
+  font-weight:490;
+  line-height: 56rpx;
+  margin-left: 20rpx;
+  padding: 10rpx;
+}
+.code-img {
+  width: 80rpx;
+  height: 80rpx;
+}
+/*蒙层*/
+.bg {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 2400rpx;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.7;
+  opacity: 0.70;
+  filter: alpha(opacity=70);
+}
+.show {
+  display: none;
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  width: 53%;
+  height: 8%;
+  padding: 8px;
+  border: 8px solid #e8e9f7;
+  background-color: white;
+  z-index: 1002;
+  overflow: auto;
+}
+/*分类*/
+.scroll {
+  margin-top: 34rpx;
+  border-bottom: 20rpx;
+}
+
+.sorts {
+  display: flex;
+  width: 158%;
+}
+
+.sort {
+  width: 200rpx;
+  height: 240rpx;
+  border-radius: 10rpx;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  position: relative;
+}
+
+.sort_img {
+  width: 200rpx;
+}
+
+.glass {
+  position: absolute;
+  left: 10rpx;
+  top: 10rpx;
+  width: 90%;
+  height: 10vw;
+  border-radius: 10rpx;
+  text-align: center;
+}
+
+.text {
+  margin-top: 5rpx;
+  width: 180rpx;
+  height: 60rpx;
+}
+
+.text1 {
+  font-size: 34rpx;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/*标题*/
+.tittle {
+  font-size: 36rpx;
+  font-weight: 560;
+  margin-left: 30rpx;
+  margin-top: 40rpx;
+  margin-bottom: 30rpx;
+  color:#5e4f4f;
+}
+
+/*游戏卡片*/
+.card {
+  width: 680rpx;
+  height: 280rpx;
+  border-radius: 20rpx;
+  margin: auto;
+  overflow: hidden;
+}
+
+.game-img {
+  width: 690rpx;
+  height: 300rpx;
+  border-radius: 20rpx;
+}
+
+.game-glass {
+  width: 640rpx;
+  height: 200rpx;
+  border-radius: 20rpx;
+  border: 1rpx solid #ffffff;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20rpx);
+  text-align: center;
+}
+
+/*志愿组织操作*/
+.list {
+  display: flex;
+  /* margin: 30rpx; */
+  background: #ffffff;
+  border-radius: 10rpx;
+  padding: 0rpx 20rpx;
+  justify-content: space-between;
+}
+
+/*分割线样式*/
+.divLine{
+  background: #E0E3DA;
+  margin: 0rpx 50rpx;
+  height: 3rpx;
+ }
+
+ .divLine1{
+  background: #E0E3DA;
+  margin: 0rpx 20rpx;
+  height: 3rpx;
+ }
+
+
+.tittle2 {
+  margin: 30rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #5e4f4f;
+}
+
+.out_ever {
+  margin: 30rpx;
+  height: 36rpx;
+  width: 36rpx;
+}
+
+
+
+/*志愿者个人信息*/
+
+
+
+/*常见问题*/
+.text-clamp2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/*参与乡村振兴*/
+.help {
+  width: 700rpx;
+  margin: 0 auto;
+}
+
+.help {
+  margin: 10rpx auto;
+}
+
+.help_item {
+  margin: 10rpx auto;
+}
+
+.title0 {
+  font-size: 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+}
+
+.title_1 {
+  width: 630rpx;
+  height: 60rpx;
+  padding-left: 20rpx;
+  color: #5e4f4f;
+}
+
+.title_2 {
+  width: 50rpx;
+  height: 60rpx;
+  text-align: center;
+}
+
+.show-image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 10rpx auto;
+}
+
+.detail {
+  font-size: 28rpx;
+  color:dimgray;
+  letter-spacing: 0px;
+  text-align:justify;
+  text-indent: 28px;
+  line-height: 30px;
+  white-space: normal;
+ line-height: 40rpx;
+
+}
+
+.box{
+
+ margin: 20rpx;
+ padding: 20rpx;  
+}

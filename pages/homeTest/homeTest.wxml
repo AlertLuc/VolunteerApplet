@@ -1,0 +1,156 @@
+<!--轮播图-->
+<view>
+  <view class="area">
+    <view class="apart">
+      <!--聊天-->
+      <image src="/images/home/chat.png" class="chat-img" bindtap="toChat">
+        <view class="chatNum" wx:if="{{chatCounter!=0}}">{{chatCounter}}</view>
+      </image>
+    </view>
+    <image src="/images/home/logo.jpg" class="logo-img"></image>
+    <image src="/images/biaot.png" class="biaot" />
+  </view>
+
+
+  <!--底部一栏-->
+  <view class="compus-me">
+    <view class="compus">
+      <view class="plh" bindtap="toThoughts">志愿园地</view>
+      <image src="/images/home/code.png" class="code-img" bindtap="scanCode"></image>
+      <view class="plh" bindtap="oneself">个人中心</view>
+    </view>
+  </view>
+</view>
+
+
+<!--扫码后的蒙层-->
+<view class="bg" bindtap='hideview' style='display:{{display}}'></view>
+<view>
+  <input type="text" bindinput="getCommand" class="show" style='display:{{display}}' placeholder="请输入签到口令" confirm-type="done" bindconfirm="confirm" />
+</view>
+
+
+
+<!--分类-->
+<scroll-view class="scroll" scroll-x="true">
+  <view class="sorts">
+    <!--图片加标题-->
+    <view class="sort" wx:for="{{cardSort}}" wx:key="index">
+      <image src="{{item.src}}" mode="widthFix" class="sort_img" data-index="{{index}}" bindtap="toSortDetail"></image>
+      <view class="glass">
+        <image src="{{item.name}}" class="text"></image>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+<!--标题-->
+<view class="tittle">课间互动小游戏</view>
+
+<!--校园游戏-->
+<view class="card">
+  <image src="/images/shout.jpg" class="game-img" bindtap="getGame">
+    <view class="game-glass"></view>
+  </image>
+</view>
+
+
+<!--标题-->
+<view class="tittle">管理员操作</view>
+<!--管理员窗口-->
+<view class="list" bindtap="toManage" wx:if="{{!userDetail.isUser}}">
+  <view class="tittle2">管理项目</view>
+  <image src="/images/forward.png" class="out_ever"></image>
+</view>
+<view class="divLine"></view>
+<view class="list" bindtap="toPublish" wx:if="{{!userDetail.isUser}}">
+  <view class="tittle2">发布活动</view>
+  <image src="/images/forward.png" class="out_ever"></image>
+</view>
+<view class="divLine"></view>
+
+
+<!--标题-->
+<view class="tittle">志愿者操作</view>
+<!--志愿者窗口-->
+<view class="list" bindtap="particiteAct">
+  <view class="tittle2">参与活动</view>
+  <image src="/images/forward.png" class="out_ever"></image>
+</view>
+<view class="divLine"></view>
+<!--标题-->
+<view class="tittle">乡村振兴需要我们大学生做什么？</view>
+
+<!--一些问题-->
+
+<!--参与到振兴-->
+<view class='help'>
+  <view class='help_item'>
+    <view class='title0' data-index='1' catchtap='panel'>
+      <view class='title_2'>
+        <image src="/images/home/{{showIndex == 1 ? 'up':'down'}}.png" class="show-image"></image>
+      </view>
+      <view class='title_1'>1.目标制订</view>
+    </view>
+    <view class='box' wx:if="{{showIndex == 1}}">
+    <view class='detail' wx:if="{{showIndex == 1}}">根据自己的能力，专业水平来制订计划，对乡村的生活环境、经济状况、人口情况、人们的医疗卫生经济等方面的状况有所了解，制定出合适自己的计划目标。</view>
+</view>
+
+  </view>
+  <view class="divLine1"></view>
+  <view class='help_item'>
+    <view class='title0' data-index='2' catchtap='panel'>
+
+      <view class='title_2'>
+        <image src="/images/home/{{showIndex == 2 ? 'up':'down'}}.png" class="show-image"></image>
+      </view>
+      <view class='title_1'>2.积极参与</view>
+    </view>
+
+    <view class='box' wx:if="{{showIndex == 2}}">
+
+    <view class='detail' wx:if="{{showIndex == 2}}">乡村振兴，有关部门会组织各种活动，作为大学生可以积极报名参加，为乡村的振兴贡献出自己的一份力量就好。毕竟能力有限，积极参与相关的活动做出努力就可以。</view>
+  </view>
+
+  </view>
+  <view class="divLine1"></view>
+  <view class='help_item'>
+    <view class='title0' data-index='3' catchtap='panel'>
+
+      <view class='title_2'>
+        <image src="/images/home/{{showIndex == 3 ? 'up':'down'}}.png" class="show-image"></image>
+      </view>
+      <view class='title_1'>3.下乡实干</view>
+    </view>
+    <view class='box' wx:if="{{showIndex == 3}}">
+    <view class='detail' wx:if="{{showIndex == 3}}">加入振兴乡村的行列，积极为村民营造良好的生活环境，提升村民的教育文化水平，发挥自己的专业，进行相关的职业的指导。切身投入到工作中去。招商引资。如果自己有能力，有人脉关系，可以通过对当地的经济基本情况进行了解，通过引进相关产业提升人们的收入水平，带动乡村的经济发展。积极发动自己的能力，寻求合作等。</view>
+  </view>
+  </view>
+  <view class="divLine1"></view>
+  <view class='help_item'>
+    <view class='title0' data-index='4' catchtap='panel'>
+
+      <view class='title_2'>
+        <image src="/images/home/{{showIndex == 4 ? 'up':'down'}}.png" class="show-image"></image>
+      </view>
+      <view class='title_1'>4.力所能及</view>
+    </view>
+    <view class='box' wx:if="{{showIndex == 4}}">
+    <view class='detail' wx:if="{{showIndex == 4}}">作为大学生毕竟能力有限，可以做一些力所能及的事情，譬如：当老师带动乡村的教育事业，医学专业的可以帮助乡村提升医疗卫生水平。不管哪个行业，充分发挥自己的特长，在乡村振兴中做力所能及的事情就好。</view>
+  </view>
+  </view>
+  <view class="divLine1"></view>
+  <view class='help_item'>
+    <view class='title0' data-index='5' catchtap='panel'>
+
+      <view class='title_2'>
+        <image src="/images/home/{{showIndex == 5 ? 'up':'down'}}.png" class="show-image"></image>
+      </view>
+      <view class='title_1'>5.合理建议</view>
+    </view>
+    <view class='box' wx:if="{{showIndex == 5}}">
+    <view class='detail' wx:if="{{showIndex == 5}}">对乡村的基本情况所有了解，然后根据市场的需要，当地的地形、地理、气候、人口等相关情况做出合理的发展计划，可以积极地为振兴乡村出谋划策。提供合理的建议。</view>
+  </view>
+  </view>
+  <view class="divLine1"></view>
+</view>

@@ -1,0 +1,59 @@
+<view class="search">
+  <input bindinput="getInputData" value="{{inputValue}}" type="text" placeholder="搜索" bindtap="touchInput"/>
+  <image src="/images/search.png" class="search_img" bindtap="search" />
+</view>
+
+<!--分类选择框-->
+<scroll-view class="scroll" scroll-x="true" class="list0">
+  <view class="sorts " wx:for="{{card}}" wx:key="index">
+    <view class="sort1 {{item.select?'sort':''}}" bindtap="chooseCard" data-index="{{index}}">{{item.name}}</view>
+  </view>
+</scroll-view>
+
+
+<!--搜索的历史记录-->
+<view wx:if="{{searchData}}" hidden="{{inputHide}}">
+  <!--点击删除那一排-->
+  <view class="delete_search">
+    <view>搜索历史</view>
+    <image src="/images/delete.png" class="delete" bindtap="moveAllRecord" />
+  </view>
+  <!--历史搜索记录-->
+  <view wx:for="{{searchRecord}}" wx:key="index" class="record_area">
+    <view class="searchRecord" data-record="{{item}}" bindtap="historySearch">{{item}}</view>
+  </view>
+</view>
+
+<!--热门推荐-->
+<scroll-view>
+  <view wx:for="{{searchData}}" wx:key="index">
+    <view class="hot" bindtap="todetail" data-id="{{item._id}}" data-title="{{item.title}}">
+      <view class="img_clip">
+        <image src="{{item.imgUrl}}" class="hot_img" mode="widthFix"></image>
+      </view>
+      <view class="message">
+        <view class="hot_title">{{item.title}}</view>
+        <view class="intro">{{item.content}}</view>
+        <view class="num">
+          <view wx:if="{{item.state.signState==0}}" class="last_num">距报名开始:{{item.state.day}}天</view>
+          <view class="last_num" wx:if="{{item.state.signState==1}}">距报名结束:{{item.state.day}}天</view>
+          <view wx:if="{{item.state.signState==2}}" class="last_num">报名已结束</view>
+          <view class="last_num">名额：{{item.residueNum}}/{{item.totalNum}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+
+
+
+<!-- 新的搜索结果,全部活动也是这个样式 -->
+
+<!--
+<view class="card">
+  <image src="cloud://text01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072/img/tst/0.png" mode="widthFix" class="img"></image>
+  <view class="glass"></view>
+</view>
+
+-->

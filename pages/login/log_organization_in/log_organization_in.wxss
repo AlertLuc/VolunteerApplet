@@ -1,0 +1,144 @@
+@import "../log_in/log_in.wxss";
+.logo_look {
+  color: gray;
+  margin: 16rpx 32rpx;
+  padding: 8rpx;
+  width: 450rpx;
+  height: 450rpx;
+}
+.logoSize {
+  position: fixed;
+  right: 125rpx;
+  top: 270rpx;
+  height: 55rpx;
+  width: 55rpx;
+}
+.tittle2{
+  color: #bbb8b8;
+  font-size: 30rpx;
+}
+.tittle3{
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+}
+.add_img{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 16rpx;
+  border: 2px dashed #bbb8b8;
+  color: #bbb8b8;
+  font-size: 100rpx;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 100rpx;
+  margin-right: 80rpx;
+  margin-top: 30rpx;
+}
+.img_clip{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  margin-right: 80rpx;
+  margin-top: 30rpx;
+}
+.add_img1{
+  height: 100rpx;
+}
+.dividing-line1{
+  width: 660rpx;
+  height: 1rpx;
+  background: rgba(70, 68, 68, 0.1);
+  margin: auto;
+  margin-top: 30rpx;
+}
+.logoButton {
+  color: #bbb8b8;
+  width: 180rpx;
+  height: 180rpx;
+  background-color:#ffffff;
+}
+
+.serve_content {
+  color: gray;
+  padding: 8rpx;
+  border: 1rpx solid gold;
+  display: flex;
+  flex-direction: row;
+  margin: 16rpx 32rpx;
+}
+.sever {
+  display: flex;
+  margin-left: 8rpx;
+  width: 110rpx;
+}
+/* 灰色蒙层*/
+.mask_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  background: black;
+  z-index: 100;
+}
+/* 选择服务列表*/
+.cart_content {
+  position: fixed;
+  top: 300rpx;
+  margin: 0rpx 150rpx;
+  width: 450rpx;
+  height: 450rpx;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 200;
+  overflow: auto;
+}
+.cart_content_top {
+  display: flex;
+  justify-content: space-between;
+  
+  height: 60rpx;
+  color: rgb(230, 99, 99);
+  padding: 5rpx 15rpx;
+}
+.top_title {
+  font-size: 40rpx;
+}
+/* 选择服务*/
+.sign-setting-border {
+  margin-left: 2%;
+  margin-top: 5%;
+  width: 22%;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #999999;
+  font-size: 14px;
+  text-align: center;
+  font-family: -apple-system;
+  border: 1px solid #DBDBDB;
+}
+.selected {
+  background-color: #FFA404;
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid #FFA404;
+}
+
+.limit1{
+  width: 580rpx;
+}
+.loction{
+  margin-left:10rpx;
+  margin-bottom: 30rpx;
+  margin-top: 20rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+.button{
+  
+  background: linear-gradient(160deg, #faa780, #fae8ad);
+}

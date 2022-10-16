@@ -1,0 +1,40 @@
+<!--登录后显示的页面-->
+<view style="font-size: 44rpx; font-weight: bolder; color: #852026;">个人简历</view>
+
+<view class="id_card" wx:if="{{userInfo}}">
+  <image class="profile" src="{{userInfo.avatarUrl}}"></image>
+  <view class="user_name">{{userInfo.nickName}}</view>
+</view>
+<view>
+</view>
+
+<view class="user_out" bindtap="unsubscribe">
+  <view class="log_out">注销账号</view>
+  <!-- <image src="/images/log_out.png" class="out_ever"></image> -->
+</view>
+
+<!--pages/accountInfo/accountInfo.wxml-->
+<!-- <text>pages/accountInfo/accountInfo.wxml</text> -->
+<!-- <view class="id-card">
+  <image class="profile" src="{{userInfo.avatarUrl}}"></image>
+  <view class="user-name">昵称</view>
+</view> -->
+
+<!--服务标志-->
+<!-- <view class="header">志愿者服务标志</view>
+<view class="rewards">
+  <view wx:for="{{get}}" class="serve" wx:key="index">
+    <view class="mark">
+      <image src="{{item.src}}" class="serve_img"></image>
+      <text class="serve_text">{{item.name}}</text>
+    </view>
+  </view>
+</view> -->
+
+<!-- <view class="header">个人身份信息</view> -->
+<!--个人身份信息-->
+<!-- <view class="ID">
+  <view class="user">姓名：{{userdetail.name}}</view>
+  <view class="user">手机号：{{userdetail.phoneNum}}</view>
+  <view class="user">身份证号：{{userdetail.IDNum}}</view>
+</view> -->

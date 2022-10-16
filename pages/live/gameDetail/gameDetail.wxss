@@ -1,0 +1,57 @@
+
+page{
+  background: #f8f8f8;
+
+}
+
+
+video{
+  width: 99%;
+  height: 420rpx;
+  padding: 0rpx 0rpx;
+  margin:  0rpx 5rpx ;
+  background: #ffffff;
+
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  margin: auto;
+}
+.tittle{
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  color: #474444;
+}
+.text{
+  font-size: 30rpx;
+  background: #ffffff;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  line-height: 60rpx;
+  color: #444242;
+}
+
+/*新增*/
+
+.img_src{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30rpx;
+}
+.img_s{
+  height: 345rpx;
+  width: 345rpx;
+  margin: 30rpx;
+}
+
+image{
+  height: 380rpx;
+  width: 380rpx;
+
+}

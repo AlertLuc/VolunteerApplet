@@ -1,0 +1,121 @@
+<view class="totalPage">
+
+  <view class="data_root">
+    <!--头像和姓名区-->
+    <view class="userInfo">
+      <image src="{{detail.Img}}" class="user_img"></image>
+      <view class="user_right">
+        <view class="user_choose">
+          <view class="user_name">{{detail.name}}</view>
+          <view class="label_right" data-label="{{detail.label}}" bindtap="toDetail">#{{detail.label}}</view>
+        </view>
+        <view class="date_bottom">{{detail.date}}</view>
+      </view>
+    </view>
+    <!-- 展示内容区 -->
+    <view class="itemRoot">
+      <view class="font_root">
+        <text class="font_mid">{{detail.inputValue}}</text>
+      </view>
+      <view class="imgRoot">
+        <block class="imgList" wx:for="{{detail.fileIDs}}" wx:for-detail="itemImg" wx:key="index">
+          <image class="img" src='{{item}}' mode='aspectFill' data-img='{{[itemImg,detail.fileIDs]}}' bindtap="previewImg"></image>
+        </block>
+      </view>
+    </view>
+  </view>
+
+
+  <!--精彩评论区 -->
+  <view class="nice_talk">精彩评论</view>
+  <view class="chat_top">
+
+    <view wx:for="{{chat}}" wx:key="index">
+      <!--头像和姓名区-->
+      <view class="volInfo">
+        <image src="{{item.Img}}" class="vol_img"></image>
+        <view class="vol_right">
+          <view class="vol_choose">
+            <view class="vol_name">{{item.nickName}}</view>
+          </view>
+          <view class="date_vol_bottom">{{item.date}}</view>
+        </view>
+      </view>
+      <!--评论内容区-->
+      <view class="chat_root">
+        <text class="chat_mid" bindtap="reply" data-name="{{item.nickName}}" data-index="{{index}}">{{item.content}}</text>
+      </view>
+
+
+      <!--回复区-->
+      <view wx:for="{{item.reply}}" wx:for-item="cell" wx:key="index" wx:for-index="indexx">
+
+        <!--第一个不折叠-->
+        <view wx:if="{{indexx==0}}">
+          <view class="replyInfo">
+            <image src="{{cell.Img}}" class="reply_img"></image>
+            <view class="reply_right">
+              <view class="reply_choose">
+                <view class="reply_name">{{cell.nickName}}</view>
+              </view>
+              <view class="date_reply_bottom">{{cell.date}}</view>
+            </view>
+          </view>
+
+          <!--回复内容区-->
+          <view class="reply_root">
+            <text class="reply_mid" bindtap="reply" data-name="{{cell.nickName}}" data-index="{{index}}">{{cell.content}}</text>
+          </view>
+        </view>
+
+        <view class='title' data-index='{{indexx+1}}' data-dindex="{{index}}" catchtap='panel' wx:if="{{indexx==0&&showIndex==0}}">
+          <view class='title_1'>展开更多回复</view>
+          <view class='title_2'>
+            <image src="/images/live/up.png" class="show-image"></image>
+          </view>
+        </view>
+
+        <!--第二条等回复-->
+        <view wx:if="{{indexx!=0&&showIndex!=0}}">
+          <view class="replyInfo">
+            <image src="{{cell.Img}}" class="reply_img"></image>
+            <view class="reply_right">
+              <view class="reply_choose">
+                <view class="reply_name">{{cell.nickName}}</view>
+              </view>
+              <view class="date_reply_bottom">{{cell.date}}</view>
+            </view>
+          </view>
+
+          <!--回复内容区-->
+          <view class="reply_root">
+            <text class="reply_mid" bindtap="reply" data-name="{{cell.nickName}}" data-index="{{index}}">{{cell.content}}</text>
+          </view>
+        </view>
+
+
+        <view class='title' data-index='{{1}}' catchtap='panel' wx:if="{{indexx==item.reply.length-1&&showIndex != 0}}">
+          <view class='title_1'>收起</view>
+          <view class='title_2'>
+            <image src="/images/live/down.png" class="show-image"></image>
+          </view>
+        </view>
+
+      </view>
+    </view>
+
+  </view>
+
+</view>
+
+
+<!--底部的输入框-->
+
+<view class="input_box">
+
+  <view class="input_box1">
+    <input class="pub-input" confirm-type="send" confirm-hold value="{{content}}" bindinput="getInputValue" adjust-position="false" cursor-spacing="22rpx" placeholder="{{replyText}}"></input>
+    <view class="pub-button" bindtap="publishText">发送</view>
+  </view>
+
+</view>

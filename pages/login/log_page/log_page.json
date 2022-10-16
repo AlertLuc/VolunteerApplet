@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationStyle": "default",
+  "navigationBarBackgroundColor": "#ffffff",
+  "backgroundTextStyle": "light",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "志愿者/志愿组织登录"
+}

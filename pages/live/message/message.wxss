@@ -1,0 +1,60 @@
+.face {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+  margin-right: 40rpx;
+  z-index: 0;
+}
+.user-list {
+  display: flex;
+  flex-direction: row;
+  margin: 30rpx 40rpx 0rpx 40rpx;
+  justify-content: space-between;
+}
+.counter{
+  width: 30rpx;
+  height: 30rpx;
+  background-color: red;
+  border-radius: 50%;
+  color: #ffffff;
+  text-align: center;
+  line-height: 30rpx;
+  font-size: 20rpx;
+  position: absolute;
+  left: 120rpx;
+  z-index: 10;
+}
+.nick-name {
+  font-size: 32rpx;
+  font-weight: 500;
+}
+.left { 
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.right {
+  margin-top: 20rpx;
+}
+.msg {
+  color: #a0a0a0;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+  /* margin-top: 5rpx; */
+}
+.time {
+  font-size: 20rpx;
+  color: #a0a0a0;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.add-friend {
+  margin: 20rpx 20rpx;
+  text-align: center;
+  border-bottom: solid 1rpx #e4e4e4;
+  padding-bottom: 20rpx;
+}

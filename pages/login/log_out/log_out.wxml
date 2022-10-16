@@ -1,0 +1,19 @@
+<view class="card">
+  <view class="inp">
+    <view class="tittle">真实姓名</view>
+    <input bindinput="getName" placeholder="请输入您的姓名"/>
+  </view>
+  <view class="dividing-line"></view>
+  <view class="inp">
+    <view class="tittle">电话号码</view>
+    <input bindinput="getPhoneNum" placeholder="请输入您的手机号" type="password"/>
+  </view>
+  <view class="dividing-line"></view>
+  <view class="inp">
+    <view class="tittle">身份证号</view>
+    <input bindinput="getIDNum" placeholder="请输入您的身份证号" type="password"/>
+  </view>
+  <view class="dividing-line"></view>
+</view>
+
+<button bindtap="login" class="button" style="position: relative;top: 10rpx">确认注销</button>

@@ -1,0 +1,22 @@
+<scroll-view wx:for="{{volList}}" wx:key="index" class="detail">
+  <view class="id_card">
+    <image class=".userImg" src="{{item.Img}}"></image>
+    <view class="user_name">{{item.name}}</view>
+    <view class="header">手机号码：{{item.phoneNum}}</view>
+    <view class="header">学校：{{item.school}} 年级：{{item.class}}</view>
+    <view class="header"> 专业：{{item.major}}</view>
+
+    <view class="bar">
+      <block>
+        <image src="/images/chat.png" class="manage" bindtap="consultService" data-id="{{item._id}}" data-name="{{item.name}}" data-img="{{item.Img}}"></image>
+        <view class="test">联系志愿者</view>
+        <image src="/images/deleteman.png" class="manage" bindtap="deleteVol" data-index="{{index}}" data-id="{{item._id}}"></image>
+        <view class="test">删除志愿者</view>
+      </block>
+    </view>
+  </view>
+  <view>
+  </view>
+
+
+</scroll-view>

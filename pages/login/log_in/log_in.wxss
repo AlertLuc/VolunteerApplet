@@ -1,0 +1,108 @@
+page{
+  background-color:#f8f8f8f8;
+}
+.con_error {
+  margin-left: 36rpx;
+  margin-top: -28rpx;
+  font-size: 23rpx;
+  color: #ff9f73;
+}
+.con_right {
+  margin-left: 36rpx;
+  margin-top: -28rpx;
+  font-size: 23rpx;
+  color: grey;
+}
+/* 协议 */
+.privacy {
+  color: #777777;
+  margin-top: 20rpx;
+  margin-left: 126rpx;
+  font-size: 27rpx;
+  /* 按钮可用 */
+}
+checkbox .wx-checkbox-input{
+  width: 30rpx; 
+  height: 30rpx; 
+  border-radius: 50%;
+  margin-top: -15rpx;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+  border: none;
+  background:   #ff9f73;
+  margin-top: -15rpx;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+  width: 20rpx;
+  height: 20rpx;
+  line-height: 20rpx;
+  border-radius: 50%;
+  text-align: center;
+  font-size:20rpx; 
+  color:#FFF; 
+  background: transparent;
+  transform:translate(-50%, -50%) scale(1);
+  -webkit-transform:translate(-50%, -50%) scale(1);
+}
+
+  /* ADD */
+.card{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-radius: 20rpx;
+  background: #ffffff;
+  margin-top: 40rpx;
+}
+input{
+  width: 300rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+.plh{
+  color:  #807777;
+  font-size: 30rpx;
+}
+.tittle{
+  display: flex;
+  margin: 30rpx;
+  font-size: 30rpx;
+  color:  #333232;
+}
+.inp{
+  display: flex;
+  justify-content: space-between;
+  color: #534e4e;
+  font-size: 30rpx;
+}
+.limit{
+  width: 500rpx;
+}
+.dividing-line{
+  width: 660rpx;
+  height: 1rpx;
+  background: rgba(0, 0, 0, 10%);
+  margin: auto;
+}
+.gender {
+  color:#807777;
+  font-size: 30rpx;
+  margin: 30rpx 0rpx 30rpx 0;
+  height: 20px;
+  width: 300rpx;
+  margin-bottom: 15px; 
+}
+
+/* 按钮 */
+.button{
+  width: 60%;
+
+  background: linear-gradient(160deg, #faa780, #fae8ad);
+  color: white;
+  border-radius: 60rpx;
+  margin-top: 30rpx;
+}
+.button::after {
+  border-radius: 90rpx;
+  border: 0;
+}
+

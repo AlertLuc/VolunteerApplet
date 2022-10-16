@@ -1,0 +1,187 @@
+<!-- 0 -->
+
+<view wx:if="{{id==1}}">
+
+  <video autoplay="true" src="cloud://text01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072/movie/飞花令.mp4" class="video"></video>
+
+  <view class="content" style="white-space:pre-line">
+    <!-- 把游戏由来和游戏规则拆开，拆开的内容不换行 -->
+    <view class="tittle">游戏由来：</view>
+    <view class="text"> 飞花令，原本是古人行酒令时的一个文字游戏，源自古人的诗词之趣，得名于唐代诗人韩翃《寒食》中的名句“春城无处不飞花”。行飞花令时可选用诗词曲中的句子，但选择的句子一般不超过七个字。</view>
+    <view class="tittle">游戏规则：</view>
+    <view class="text"> 1、为每场比赛设置一个关键字，不再仅用“花”字，而是增加了“云”“春”“月”“夜”等诗词中出现的高频字。
+
+      2、把游戏人数分成两组，一组内两人进行比赛，对不出来淘汰。最终由两组的第一名进行比赛，在轮流背诵含有关键字的诗句，直到有一方背不出，则另一方获胜。</view>
+  </view>
+</view>
+
+<!-- 1 -->
+<view wx:if="{{id==0}}">
+  <video autoplay="true" src="cloud://text01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072/movie/七巧板.mp4" class="video"></video>
+
+  <view class="content" style="white-space:pre-line">
+    <!-- 把游戏由来和游戏规则拆开，拆开的内容不换行 -->
+    <view class="tittle">游戏由来：</view>
+    <view class="text"> 七巧板是一种古老的中国传统智力玩具，顾名思义，是由七块板组成的。
+      通常，用七巧板拼摆出的图形应当由全部的七块板组成，且板与板之间要有连接，如点的连接、线的连接或点与线的连接；
+      可以一个人玩，也可以几个人同时玩。</view>
+    <view class="tittle">游戏规则：</view>
+    <view class="text">①依图成形，即从已知的图形来排出答案；
+      ②见影排形，从已知的图形找出一种或一种以上的排法；
+      ③自创图形，可以自己创造新的玩法、排法；
+      ④数学研究，利用七巧板来求解或证明数学问题。
+      七巧板按不同的方法拼摆、组合可以拼排成各种各样的几何图形和形象，如桥梁、船只、房屋、手枪
+      或是跑步、跌倒、玩耍、跳舞、站立的人物以及戏水的鱼、猫、狗等。</view>
+  </view>
+</view>
+
+<!-- 2 -->
+<view wx:if="{{id==2}}">
+  <video autoplay="true" src="cloud://text01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072/movie/故事接龙.mp4" class="video"></video>
+
+  <view class="content" style="white-space:pre-line">
+    <!-- 把游戏由来和游戏规则拆开，拆开的内容不换行 -->
+
+    <view class="tittle">游戏规则：</view>
+    <view class="text"> 游戏参与人数不设限制，一般五人一组，各自准备一张纸，
+      分别在纸上写下一个词，
+      自定义顺序分别写下带有人物、时间、地点、事件、形容词要素的词，
+      最终由五人的词顺序构成一句话，
+      并读出，中途笑的人为此局输，记名。
+      最终五局过后，记名名最多者为输，接受惩罚。</view>
+  </view>
+</view>
+
+<!-- 3 -->
+<view wx:if="{{id==3}}">
+  <video autoplay="true" src="cloud://text01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072/movie/数字华容道.mp4" class="video"></video>
+
+  <view class="content" style="white-space:pre-line">
+    <!-- 把游戏由来和游戏规则拆开，拆开的内容不换行 -->
+    <view class="tittle">游戏背景：</view>
+    <view class="text"> 华容道是古老的中国民间益智游戏，以其变化多端、百玩不厌的特点与魔方、独立钻石棋一起被国外智力专家并称为"智力游戏界的三个不可思议"。
+      它与七巧板、九连环等中国传统益智玩具还有个代名词叫作"中国的难题"。</view>
+    <view class="tittle">游戏规则：</view>
+    <view class="text"> 数字华容道有三乘三、四乘四、五乘五三个难度。三乘三就是一共9个格子，需要移动1到8八个数字；
+      四乘四就是一共16个格子，需要移动1到15十五个数字；五乘五就是一共25个格子，需要移动1到24二十四个数字；
+      随着数字的增多，游戏的难度也随之增大。
+      我们通过移动数字格子与空格交换，最终实现数字顺序排序即为成功！</view>
+  </view>
+</view>
+
+
+<!-- 4 -->
+<view wx:if="{{id==4}}">
+  <video autoplay="true" src="cloud://text01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072/movie/数独.mp4" class="video"></video>
+
+  <view class="content" style="white-space:pre-line">
+    <!-- 把游戏由来和游戏规则拆开，拆开的内容不换行 -->
+    <view class="tittle">游戏规则：</view>
+    <view class="text"> 玩家需要根据9×9盘面上的已知数字，推理出所有剩余空格的数字，并满足每一行、每一列、每一个粗线宫（3*3）内的数字均含1-9，不重复 。
+      我们的目标是，以填补空白，从1到9的数字，使每行，列和所有的3x3细胞地区目前所有的数字1到9。</view>
+    <view class="tittle">游戏玩法：</view>
+    <view class="text">
+      依解题填制的过程可区分为直观法与候选数法。
+      直观法就是不做任何记号，直接从数独的盘势观察线索，推论答案的方法。
+      候选数法就是删减等位群格位已出现的数字，将剩余可填数字填入空格做为解题线索的参考，可填数字称为候选数。
+      直观法和候选数法只是填制时候是否有注记的区别，依照个人习惯而定，并非鉴定题目难度或技巧难度的标准，无论是难题或是简单题都可上述方法填制，
+      一般程序解题以候选数法较多。</view>
+  </view>
+</view>
+
+<!-- 5 -->
+<view wx:if="{{id==6}}">
+  <video autoplay="true" src="cloud://text01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072/movie/毽球.mp4" class="video"></video>
+
+  <view class="content" style="white-space:pre-line">
+    <!-- 把游戏由来和游戏规则拆开，拆开的内容不换行 -->
+    <view class="tittle">游戏由来：</view>
+    <view class="text"> 飞毽球（毽子），是一项简便易行的健身运动，是一项传统民间体育活动。</view>
+    <view class="tittle">游戏玩法：</view>
+    <view class="text"> 1.单纯比踢的技术
+      一只脚着地，另一只脚踢。着地的脚可以移动，也可以不准移动；
+      踢的脚可以着地，也可以不着地，比赛正式开始前，常用此法定参赛人员出场次序。
+      参加者可以依次轮换踢，连续踢得多者或先完成任务者为胜方。或者双脚轮流踢，更考验左右脚的配合。
+      也可以“加宝塔”，即第一人踢一下，第二人踢两下等等。依此类推，周而复始，直往上加，到其中一人踢“死”为止。
+      “死者”可向“生者”“抛毛”，即将毽子用手抛给人家踢，直到人家没踢到或你接到踢来的毽子为止。比赛再重新开始。
+      2.兼比踢的花样
+      最常见的是“打跳”，即毽子一抛，双脚同时跳起，用一只脚踢它。
+      可以连续跳，也可以跳了踢，踢了跳。还有“打偷”，即一只脚着地，另一只脚从背后“偷偷”去踢；
+      “打环”，双脚跳起，一只腿弯曲起来，另一只脚踢；“打翘”，双脚跳起，一只腿向前伸直，另一只腿踢；
+      “打剪”，双脚跳起，两腿向前作剪剪子动作，用其中一只脚踢毽子。此外，还可以故意用反脚踢，
+      （注意：有人是左撇子，右脚则是反脚），或双脚轮换踢等等。</view>
+  </view>
+</view>
+
+<!-- 6 -->
+<view wx:if="{{id==9}}">
+  <video autoplay="true" src="cloud://text01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072/movie/猜数字.mp4" class="video"></video>
+
+  <view class="content" style="white-space:pre-line">
+    <!-- 把游戏由来和游戏规则拆开，拆开的内容不换行 -->
+    <view class="tittle">游戏由来：</view>
+    <view class="text"> 猜数字（又称 Bulls and Cows ）是一种古老的的密码破译类益智类小游戏，起源于20世纪中期，一般由两个人或多人玩，也可以由一个人和电脑玩。</view>
+    <view class="tittle">游戏规则：</view>
+    <view class="text"> 通常由两个人玩，一方出数字一方猜。出数字的人要想好一个没有重复数字的4个数，不能让猜的人知道。
+      猜的人就可以开始猜。每猜一个数字，出数者就要根据这个数字给出几A几B，其中A前面的数字表示位置正确的数的个数，
+      而B前的数字表示数字正确而位置不对的数的个数。
+      如正确答案为 5234，而猜的人猜 5346，则是 1A2B，其中有一个5的位置对了，记为1A，而3和4这两个数字对了，而位置没对，
+      因此记为 2B，合起来就是 1A2B。接着猜的人再根据出题者的几A几B继续猜，直到猜中（即 4A0B）为止。</view>
+  </view>
+</view>
+
+<!-- 7 -->
+<view wx:if="{{id==8}}">
+  <video autoplay="true" src="cloud://text01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072/movie/绕口令（民间语言游戏）_百度百科.MP4" class="video"></video>
+
+  <view class="content" style="white-space:pre-line">
+    <!-- 把游戏由来和游戏规则拆开，拆开的内容不换行 -->
+    <view class="tittle">游戏由来：</view>
+    <view class="text"> 绕口令又称急口令、吃口令、拗口令等。是一种民间传统的语言游戏 ，由于它是将若干双声、叠韵词或发音相同、相近的语、
+      词有意集中在一起，组成简单、有趣的语韵，要求快速念出，所以读起来使人感到节奏感强，妙趣横生。
+    </view>
+    <view class="tittle">游戏规则：</view>
+    <view class="text"> 小朋友们可自行平均分组，最多五人一组。
+      准备多组绕口令，最先顺利无误的读完绕口令的为赢，则积一分，多组绕口令读完后，最终积分最多的组获胜。
+    </view>
+  </view>
+</view>
+
+<!-- 8 -->
+<view wx:if="{{id==5}}">
+  <view class="img_src">
+    <image src="cloud://text01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072/no_movie/题目配图.jpg" bindtap="isTouch" wx:if="{{!test}}"></image>
+    <image src="cloud://text01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072/no_movie/题目配图1.jpg" bindtap="isTouch" wx:else></image>
+  </view>
+  <view class="content" style="white-space:pre-line">
+    <!-- 把游戏由来和游戏规则拆开，拆开的内容不换行 -->
+    <view class="tittle">游戏玩法：</view>
+    <view class="text"> 请想想方法
+      在一次课堂教学活动中，老师拿出一只蜡烛、一枚图钉、一盒火柴，要求学生利用这三个条件，
+      把蜡烛点燃，固定在教室直立的墙壁上。请问你会怎么做？</view>
+    <view class="tittle">游戏规则：</view>
+    <view class="text"> 用火柴把蜡烛点燃，然后用图钉把空火柴盒固定在墙上，再用蜡油把蜡烛粘在火柴上。
+      如果只是把火柴盒看作是装火柴用的，而没想到它还可以用来固定蜡烛，便会无解。同样，
+      我们趋于以习惯的方式运用物品，从而妨碍以新的方式去运用它来解决问题。
+      比如：
+      丝巾能系在颈部，也可以用来当腰带。能否对事物的功能产生创造性的看法以适应新的情况，
+      常常成为问题解决的关键。（点击图片查看答案）</view>
+  </view>
+</view>
+
+
+<!-- 9九点相连 -->
+<view wx:if="{{id==7}}">
+  <view class="img_src">
+    <image wx:if="{{!test}}" src="cloud://text01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072/no_movie/游戏配图1.jpg" bindtap="isTouch"></image>
+    <image wx:else src="cloud://text01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072/no_movie/游戏配图.jpg" bindtap="isTouch"></image>
+  </view>
+
+  <view class="content" style="white-space:pre-line">
+    <view class="tittle">游戏规则：</view>
+    <view class="text"> 请你用一笔连续画四条直线，把图中的九个点连在一起。（点击图片查看答案）
+    </view>
+  </view>
+</view>
+
+<!-- <view style="font-size: 28rpx; color: #777777; text-align: center; margin-top: 80rpx;">素材来自网络，侵删</view> -->

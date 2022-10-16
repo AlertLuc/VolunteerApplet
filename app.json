@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/homeTest/homeTest",
+    "pages/me/me",
+    "pages/homePage/detail/detail",
+    "pages/homePage/search/search",
+    "pages/me/code/code",
+    "pages/live/chat/chat",
+    "pages/live/message/message",
+    "pages/live/fabu/fabu",
+    "pages/live/thoughts/thoughts",
+    "pages/login/log_in/log_in",
+    "pages/login/log_organization_in/log_organization_in",
+    "pages/login/log_out/log_out",
+    "pages/login/log_page/log_page",
+    "pages/login/privacy/privacy",
+    "pages/login/retrieve_organ_pa/retrieve_organ_pa",
+    "pages/login/retrieve_passwoord/retrieve_password",
+    "pages/me/publish/publish",
+    "pages/me/accountInfo/accountInfo",
+    "pages/me/participate/participate",
+    "pages/login/modify_info/modify_info",
+    "pages/me/manage/manage",
+    "pages/me/vol_detail/vol_detail",
+    "pages/live/gameDetail/gameDetail",
+    "pages/live/thoughts_detail/thoughts_detail",
+    "pages/live/game/game"
+  ],
+  "window": {
+    "navigationBarTitleText": "小青蛙不迷路",
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationStyle": "default",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于寻找附近的检测点"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+<text style="font-size: 34rpx; font-weight: bold;margin-left: 30rpx;">平台个人注册</text>
+<view style="font-size: 30rpx;color: #bbb8b8;margin-left: 30rpx;margin-top: 10rpx;">参与活动的志愿者需要提供真实有效的信息,用于准确记录个人服务时长，并认真阅读隐私政策</view>
+<view class="card">
+  <view class="limit">
+    <view class="inp">
+      <view class="tittle">姓名</view>
+      <input type="text" placeholder="请输入真实姓名" placeholder-class="plh" bindinput="getName" /> 
+    </view>
+  </view>
+  <view class="dividing-line"></view>
+  <view class="limit">
+    <view class="inp">
+      <view class="tittle">电话号码</view>
+      <input type="number" placeholder="请输入手机号码" placeholder-class="plh" bindinput="getPhoneNum" maxlength="11" />
+    </view>
+  </view>
+  <view class="con_error" wx:if="{{phoneLen>0&&phoneLen<11}}" style="width: 692rpx; height: 26rpx; display: flow-root; box-sizing: border-box">*格式错误</view>
+  <view class="con_right" wx:if="{{phoneLen==11}}" style="width: 692rpx; height: 26rpx; display: block; box-sizing: border-box">*格式正确</view>
+  <view class="dividing-line"></view>
+<view class="limit">  <view class="inp">
+    <view class="tittle">身份证号</view>
+    <!--输入身份证号并验证-->
+    <input type="idcard" placeholder="请输入身份证号" placeholder-class="plh" bindinput="getIDNum" maxlength="18" />
+  </view></view>
+  <view class="con_error" wx:if="{{IDLen>0&&IDLen<18}}" style="width: 692rpx; height: 26rpx; display: block; box-sizing: border-box">*格式错误</view>
+  <view class="con_right" wx:if="{{IDLen==18}}" style="width: 692rpx; height: 26rpx; display: block; box-sizing: border-box">*格式正确</view>
+  <view class="dividing-line"></view>
+<view class="limit">  <view class="inp">
+    <view class="tittle">电子邮箱</view>
+    <!--输入邮箱并验证-->
+    <input type="text" placeholder="请输入电子邮箱" placeholder-class="plh" bindinput="getEmail" />
+  </view></view>
+  <view class="con_error" wx:if="{{emailCheck==1}}">*格式错误</view>
+  <view class="con_right" wx:if="{{emailCheck==2}}">*格式正确</view>
+  <view class="dividing-line"></view>
+<view class="limit">  <view class="inp">
+    <view class="tittle">性别</view>
+    <picker range="{{chooseGender}}" bindchange="chooseGender">
+      <view class="gender"wx:if="{{!gender}}">请选择您的性别</view>
+      <view class="gender" wx:else>{{gender}}</view>
+    </picker>
+  </view></view>
+  <view class="dividing-line"></view>
+<view class="limit">  <view class="inp">
+    <view class="tittle">出生日期</view>
+    <picker mode="date" fields="day" bindchange="chooseDate" end="{{endDate}}">
+      <view class="gender" wx:if="{{!date}}">请选择出生日期</view>
+      <view class="gender" wx:else>{{date}}</view>
+    </picker>
+  </view></view>
+  <view class="dividing-line"></view>
+<view class="limit">  <view class="inp">
+    <view class="tittle">学校</view>
+    <!--获取到高校信息-->
+    <input type="text" placeholder="请输入您的高校" placeholder-class="plh" bindinput="getSchool" />
+  </view></view>
+  <view class="dividing-line"></view>
+<view class="limit">  <view class="inp">
+    <view class="tittle">专业</view>
+    <input type="text" placeholder="请输入您的专业" placeholder-class="plh" bindinput="getMajor" />
+  </view></view>
+  <view class="dividing-line"></view>
+<view class="limit">  <view class="inp">
+    <view class="tittle">年级</view>
+    <picker range="{{chooseClass}}" bindchange="chooseClass">
+      <view class="gender" wx:if="{{!class}}">请选择您的年级</view>
+      <view class="gender" wx:else>{{class}}</view>
+    </picker>
+  </view></view>
+  <view class="dividing-line"></view>
+<view class="limit">  <view class="inp">
+    <view class="tittle">密码</view>
+    <input type="text" placeholder="请输入您的密码" placeholder-class="plh" password="true" bindinput="getPassword1" maxlength="16"/>
+  </view></view>
+  <view class="con_error" wx:if="{{paLen1>0&&paLen1<8}}" style="width: 692rpx; height: 26rpx; display: block; box-sizing: border-box">*请输入8~16位的密码</view>
+  <view class="con_right" wx:if="{{paLen1>=8}}" style="width: 692rpx; height: 26rpx; display: block; box-sizing: border-box">*格式正确</view>
+  <view class="dividing-line"></view>
+<view class="limit">  <view class="inp">
+    <view class="tittle">确认密码</view>
+    <input type="text" placeholder="请输入确认密码" placeholder-class="plh" password="true" bindinput="getPassword2" maxlength="16"/>
+  </view></view>
+  <view class="con_error" wx:if="{{paLen2>0&&paLen2<8}}" style="width: 692rpx; height: 26rpx; display: block; box-sizing: border-box">*请输入8~16位的密码</view>
+  <view class="con_right" wx:if="{{paLen2>=8}}" style="width: 692rpx; height: 26rpx; display: block; box-sizing: border-box">*格式正确</view>
+</view>
+<!--短信验证放到后面写 位置在电话号码后-->
+<!--
+<picker mode="region" fields="day" bindchange="chooseRegion">
+  <view class="gender">当前要服务的县区：{{region}}</view>
+</picker>
+-->
+<button  bindtap="login"  class="button" >注册志愿者</button>
+<checkbox-group bindchange="isAllow">
+  <checkbox class="privacy" value="同意">已阅读并同意</checkbox>
+  <view bindtap="lookPrivacy" style="color:  #faa780;font-size: 27rpx; position:relative;top: -35rpx; left: 330rpx;">用户协议、隐私政策</view>
+</checkbox-group>

@@ -1,0 +1,148 @@
+<text style="font-size: 34rpx; font-weight: bold;margin-left: 30rpx;">平台组织注册</text>
+<view style="font-size: 30rpx;color: #bbb8b8;margin-left: 30rpx;margin-top: 10rpx;">为保证活动的顺利开展，参与活动的组织需要提供真实有效的信息</view>
+<view class="card">
+  <view class="limit">
+    <view class="inp">
+      <view class="tittle">团体名称</view>
+      <input type="text" placeholder="请输入您的团体名称" placeholder-class="plh" bindinput="getOrganizationName" />
+    </view>
+  </view>
+  <view class="dividing-line"></view>
+  <view class="limit">
+    <view class="inp">
+      <view class="tittle">主管单位</view>
+      <input type="text" placeholder="请输入主管单位名称" placeholder-class="plh" bindinput="getGovernName" />
+    </view>
+  </view>
+  <view class="dividing-line"></view>
+  <view class="limit">
+    <view class="inp">
+      <view class="tittle">姓名</view>
+      <input type="text" placeholder="请输入您的真实姓名" placeholder-class="plh" bindinput="getName" />
+    </view>
+  </view>
+  <view class="dividing-line"></view>
+  <view class="limit">
+    <view class="inp">
+      <view class="tittle">身份证号</view>
+      <!--输入并验证身份证号-->
+      <input type="idcard" placeholder="请输入您的身份证号" placeholder-class="plh" bindinput="getIDNum" maxlength="18" />
+    </view>
+    <view class="con_error" wx:if="{{IDLen>0&&IDLen<18}}" style="width: 686rpx; height: 26rpx; display: flow-root; box-sizing: border-box">*格式错误</view>
+    <view class="con_right" wx:if="{{IDLen==18}}">*格式正确</view>
+  </view>
+  <view class="dividing-line"></view>
+  <view class="limit">
+    <view class="inp">
+      <view class="tittle">手机号</view>
+      <!--输入并验证手机号-->
+      <input type="number" placeholder="请输入您的手机号码" placeholder-class="plh" maxlength="11" bindinput="getPhoneNum" />
+    </view>
+    <view class="con_error" wx:if="{{phoneLen>0&&phoneLen<11}}">*格式错误</view>
+    <view class="con_right" wx:if="{{phoneLen==11}}">*格式正确</view>
+  </view>
+  <view class="dividing-line"></view>
+  <view class="limit">
+    <view class="inp">
+      <view class="tittle">电子邮箱</view>
+      <!--输入并验证电子邮箱-->
+      <input type="text" placeholder="请输入您的电子邮箱" placeholder-class="plh" bindinput="getEmail" />
+    </view>
+    <view class="con_error" wx:if="{{emailCheck==1}}">*格式错误</view>
+    <view class="con_right" wx:if="{{emailCheck==2}}">*格式正确</view>
+  </view>
+  <view class="dividing-line"></view>
+  <view class="limit">
+    <view class="inp">
+      <view class="tittle">单位类型</view>
+      <!--选择服务类型-->
+      <picker range="{{chooseType}}" bindchange="chooseType">
+        <view class="gender" wx:if="{{!type}}">您的主管单位类型是</view>
+        <view class="gender" wx:else>{{type}}</view>
+      </picker>
+    </view>
+  </view>
+  <view class="dividing-line"></view>
+  <view class="limit">
+    <view class="inp">
+      <view class="tittle">所在县区</view>
+      <!--短信验证放到后面写-->
+      <picker mode="region" fields="day" bindchange="chooseRegion">
+        <view class="gender" wx:if="{{!region}}">当前服务所在的县区</view>
+        <view wx:else class="gender">{{region}}</view>
+      </picker>
+    </view>
+  </view>
+  <view class="dividing-line"></view>
+  <view class="limit">
+    <view class="inp">
+      <view class="tittle">密码</view>
+      <input type="text" placeholder="请输入您的账号密码" placeholder-class="plh" password="true" bindinput="getPassword1" maxlength="16" />
+    </view>
+    <view class="con_error" wx:if="{{paLen1>0&&paLen1<8}}">*请输入8~16位的密码</view>
+    <view class="con_right" wx:if="{{paLen1>=8}}">*格式正确</view>
+  </view>
+  <view class="dividing-line"></view>
+  <view class="limit">
+    <view class="inp">
+      <view class="tittle">密码</view>
+      <input type="text" placeholder="请输入再次确认密码" placeholder-class="plh" password="true" bindinput="getPassword2" maxlength="16" />
+    </view>
+    <view class="con_error" wx:if="{{paLen2>0&&paLen2<8}}">*请输入8~16位的密码</view>
+    <view class="con_right" wx:if="{{paLen2>=8}}">*格式正确</view>
+  </view>
+  <view class="dividing-line"></view>
+  <view class="limit1">
+    <view class="inp">
+      <view class="tittle">所在位置</view>
+      <input type="text" value="{{address}}" placeholder="直接输入或请点击获取位置信息" placeholder-class="plh" bindinput="getInputLoct" />
+     <image class="loction" bindtap="getLocation" src="/images/loction.png"/>
+    </view>
+  </view>
+</view>
+<!--
+<view class="serve_content" bindtap="changeMask">选择一至三个服务类型:
+  <view wx:for="{{serve}}" wx:key="index">
+    <text class="sever">[{{item.Item_Name}}]</text>
+  </view>
+</view>
+<view class="mask_bg" hidden="{{isHideMask}}"></view>
+<view class="cart_content" hidden="{{isHideMask}}">
+  <view class="cart_content_top">
+    <view bindtap="changeMask">返回</view>
+    <view class="top_title">请选择1-3种服务类型</view>
+    <view bindtap="changeMask">确定</view>
+  </view>
+  <view class="sign-setting-border {{item.isSelect?'selected':''}}" wx:for="{{applyList}}" wx:key="key" bindtap='selectApply' data-index='{{index}}'>{{item.Item_Name}}</view>
+</view>
+-->
+<view class="card">
+  <!--志愿团体的logo-->
+  <view class="limit2">
+    <view class="inp">
+      <view class="tittle" style="margin-top: 60rpx;">团体logo</view>
+      <view class="tittle2" wx:if="{{!logoID}}" style="margin-top: 60rpx;">上传您的志愿团体logo</view>
+      <view class="add_img" wx:if="{{!logoID}}" bindtap="chooseLogo">+</view>
+      <view class="img_clip" wx:if="{{logoID}}" bindtap="changeMask">
+        <image class="add_img1" src="{{logoID}}" mode="heightFix"></image>
+      </view>
+    </view>
+  </view>
+  <view class="dividing-line1"></view>
+  <!-- <view wx:if="{{!logoID}}" class="logoButton" bindtap="chooseLogo" >请上传您的志愿团体的logo</view>
+  <view wx:else class="logoButton" bindtap="changeMask">预览您的志愿团体的logo</view> -->
+  <view class="tittle3" bindtap="chooseFile">上传您的志愿团体证明表</view>
+  <view class="dividing-line"></view>
+  <view class="tittle3" bindtap="downLoadFile">点击下载证明材料文件</view>
+</view>
+<!--预览蒙层-->
+<view class="mask_bg" hidden="{{isHideMask}}"></view>
+<view class="cart_content" hidden="{{isHideMask}}">
+  <image src="{{logoID}}" class="logo_look" />
+  <image src="/images/close.png" class="logoSize" bindtap="changeMask" />
+</view>
+<button bindtap="login" class="button" style="position: relative;top: 10rpx">注册志愿团体</button>
+<checkbox-group bindchange="isAllow">
+  <checkbox class="privacy" value="同意">已阅读并同意</checkbox>
+  <view bindtap="lookPrivacy" style="color: #faa780;font-size: 27rpx; position:relative;top: -35rpx; left: 330rpx;">用户协议、隐私政策</view>
+</checkbox-group>

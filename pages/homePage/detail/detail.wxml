@@ -1,0 +1,86 @@
+<!--项目图片-->
+<view class="img_clip"><image wx:if="{{processData.imgUrl}}" src="{{processData.imgUrl}}" class="bottom_img" mode="widthFix"></image></view>
+
+<view class="box">
+  <!--报名的状态-->
+  <view class="state">{{signState}}</view>
+</view>
+
+<view class="box2">
+  <!--项目名称-->
+  <view>{{processData.name}}</view>
+  <!--时间地点人数-->
+  <view>
+    <view class="header">活动基本信息：</view>
+    <!--公益时长-->
+    <view class="intro">{{processData.serveTime}}min公益时长</view>
+    <view class="intro">活动报名时间:{{processData.signBegin}} {{processData.timeSignBegin}}至{{processData.signEnd}} {{processData.timeSignEnd}}</view>
+    <view class="intro">志愿服务时间:{{processData.actBegin}} {{processData.timeActBegin}}至{{processData.actEnd}} {{processData.timeActEnd}}</view>
+    <view class="intro">地点：{{processData.address}}</view>
+    <view class="intro">招募志愿者人数：{{processData.totalNum}}</view>
+    <view class="end"></view>
+  </view>
+</view>
+
+<view class="box2">
+<view>
+  <view>
+  <!--活动介绍-->
+    <view class="header">活动内容介绍：</view>
+    <view class="intro_str">{{processData.title}}</view>
+  </view>
+  <view>
+    <view class="intro">{{processData.content}}</view>
+    <view class="end"></view>
+  </view>
+</view>
+</view>
+
+<view class="box2">
+  <view>
+  <!--招募岗位-->
+  <view class="header">招募岗位：</view>
+  <view class="intro">{{processData.work}}</view>
+  <view class="end"></view>
+  </view>
+</view>
+
+<!--已报名的志愿者-->
+<view class="box2">
+  <view class="header">已报名的志愿者：</view>
+  <view wx:for="{{processData.volunteer}}" wx:key="index" wx:if="{{index<5}}" class="vol_root">
+    <view class="vol_one">
+      <image class="vol_img" src="{{item.Img}}"></image>
+      <view class="vol_name">{{item.name}}</view>
+    </view>
+  </view>
+  <view class="end"></view>
+</view>
+
+<!--主办方-->
+<view class="box2">
+  <view class="header">主办方：</view>
+  <view class="bottom">
+    <image src="{{processData.leader.Img}}" class="vol_img"></image>
+    <view class="organiza">{{processData.leader.organizaName}}</view>
+  </view>
+</view>
+
+<!--
+字号字体再改改（太小了有点）
+头像和标题不能在一行  头像多于一定数量就会被折叠
+拜托多content多写几行（上传的时候应该是长文吧），才能展现出这个页面的优雅样式
+
+-->
+
+<view style="width: 100%; height: 20vh; text-align: center; color: #d1d1d1; line-height: 15vh;">- 已经到底了 -</view>
+
+<view class="bar">
+  <block>
+    <button open-type="share" class="share_btn"></button>
+    <image src="/images/backHome.png" class="rigth_img" bindtap="skipHomepage"></image>
+    <image src="/images/chat.png" class="rigth_img" bindtap="consultService" wx:if="{{userDetail.isUser}}"></image>
+    <view bindtap="signUp" class="sign_on" wx:if="{{signState=='火热报名中'}}">立即报名</view>
+    <view wx:else class="sign_off">立即报名</view>
+  </block>
+</view>

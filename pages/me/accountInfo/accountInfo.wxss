@@ -1,0 +1,59 @@
+.userImg {
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 50%;
+}
+
+.id_card {
+  margin: auto;
+  width: 660rpx;
+  height: 260rpx;
+  border-radius: 20rpx;
+  box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 12%);
+}
+
+.user_name {
+  position: relative;
+  top: -80rpx;
+  left: 160rpx;
+  font-size: 44rpx;
+  font-weight: 550;
+  color: #852026;
+}
+
+.user_num {
+  position: relative;
+  font-size: 28rpx;
+  font-weight: 550;
+  color: #852026;
+}
+.profile {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100rpx;
+  position: relative;
+  top: 20rpx;
+  left: 20rpx;
+}
+
+.out_ever {
+  margin: 30rpx;
+  height: 45rpx;
+  width: 45rpx;
+}
+.user_out {
+  display: flex;
+  width: 660rpx;
+  border-radius: 20rpx;
+  /* box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 12%); */
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 30rpx;
+  background: #ffffff;
+}
+
+.log_out {
+  margin: 30rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+}

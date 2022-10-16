@@ -1,0 +1,64 @@
+page {
+  background: #f8f8f8;
+}
+
+.detail{
+   margin: 35rpx 35rpx; 
+}
+
+.userImg {
+  height: 90rpx;
+  width: 90rpx;
+  border-radius: 50%;
+}
+
+.id_card {
+  border-radius: 15px 50px;
+    padding: 20px;
+    width: 80%;
+    height: 170px;
+    background: linear-gradient(to right,#ffe6e1,#fcfcf7);
+    color: white;
+}
+
+.user_name {
+  position: relative;
+  font-size:100rpx;
+  /* text-shadow: 10px 10px 10px #f3f0ef; */
+  top: -90rpx; 
+  left: 150rpx;
+  font-size:35rpx;
+  font-weight: 550;
+  color: #706b6b;
+}
+
+.manage{
+  height: 50rpx;
+  width: 50rpx;
+  top: -70rpx; 
+}
+
+.header {
+  font-size:14px;
+  color: grey;
+  margin: 0rpx -100rpx 20rpx 50rpx;
+}
+
+.bar{
+  width: 93%;
+  display: flex;
+  border-radius: 10rpx;
+  margin: auto;
+  justify-content: space-around;
+  position: relative;
+  top: -5rpx; 
+  margin-bottom:10rpx;
+  height: 70rpx;
+}
+
+.test{
+  font-size:12px;
+  color: grey;
+  margin-top: 9rpx;
+  margin-left: -35rpx;
+}

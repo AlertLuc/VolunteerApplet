@@ -1,0 +1,14 @@
+
+<input type="text" placeholder="请输入真实姓名" bindinput="getName" />
+<input type="number" placeholder="请输入用于联系的手机号" bindinput="getPhoneNum" maxlength="11"/>
+<input type="idcard" placeholder="请输入身份证号" bindinput="getIDNum" maxlength="18"/>
+<input type="text" placeholder="请输入密码" password="true" bindinput="getPassword1" maxlength="16"/>
+<view class="con_error" wx:if="{{paLen1>0&&paLen1<8}}">*请输入8~16位的密码</view>
+<view class="con_right" wx:if="{{paLen1>=8}}">*格式正确</view>
+<input type="text" placeholder="请输入确认密码" password="true" bindinput="getPassword2" maxlength="16"/>
+<view class="con_error" wx:if="{{paLen2>0&&paLen2<8}}">*请输入8~16位的密码</view>
+<view class="con_right" wx:if="{{paLen2>=8}}">*格式正确</view>
+
+
+<button bindtap="change" class="button"style="position: relative;top: 10rpx">确认修改</button>
+

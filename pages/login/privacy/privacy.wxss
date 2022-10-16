@@ -1,0 +1,27 @@
+/* pages/login/privacy/privacy.wxss */
+/**index.wxss**/
+.textStyle01{
+  color:dimgray;
+  font-size:medium;
+  font-family:-apple-system;
+  letter-spacing: 0px;
+  text-align:justify;
+  text-indent: 38px;
+  line-height: 30px;
+  white-space: normal;
+}
+
+.box{
+   border:1px solid silver;
+  margin: 20rpx;
+  padding: 20rpx;  
+}
+
+.title{
+  font-family:-apple-system;
+  font-size: 45rpx;
+  text-align: center;
+  margin-bottom:15px;
+  color:rgb(68, 66, 66);
+}
+

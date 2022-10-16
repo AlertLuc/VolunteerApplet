@@ -1,0 +1,21 @@
+<view class="input-container item" hidden="{{!isHide}}">
+  <input bindinput="bindKeyInput" placeholder="输入签到口令如：ZQ123" value="{{inputValue}}"/>
+  <button type="default" size="{{defaultSize}}" bindtap="changeText">提交</button>
+</view>
+
+<view class="container" bindtap="hideview">
+</view>
+
+  <view  hidden="{{isHide}}" >
+  <view class="main">
+    <view class="qrcode item">
+      <canvas style="width: 200px; height: 200px;" canvas-id="myQrcode"></canvas>
+      <view class="tips">签到口令：{{text}}</view>
+    </view>
+    <view class="item">
+      <button type="default"  bindtap="download">下载</button>
+    </view>
+  </view>
+</view>
+
+

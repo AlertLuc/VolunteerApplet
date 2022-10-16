@@ -1,0 +1,158 @@
+<!--scroll-into-view自动滚动到某区域-->
+<scroll-view class="page2" bindtap="offEmoji" scroll-y style='height:{{Height + "px"}}' scroll-into-view="{{ 'a' + into}}" scroll-anchoring="true">
+  <block wx:for="{{chatList}}" wx:key="index">
+    <!--对方在左，我在右-->
+    <!--收到的消息-->
+    <view wx:if="{{me._id != item.userId}}" id="{{ 'a' + item._id}}">
+
+      <!--超过三分钟显示时间-->
+      <view wx:if="item.timeOver">
+        <view class="timeOver">{{item.time}}</view>
+      </view>
+      <!--个人信息区域-->
+      <view class="info_box">
+        <image class="headImg" src="{{item.faceImg}}"></image>
+
+
+        <!--聊天消息区
+        -->
+
+        <view class="bot">
+          <!--显示表情-->
+          <block wx:if="{{item.emoji}}">
+            <image class="emoji you" src="{{item.emoji}}"></image>
+          </block>
+          <!--显示文本-->
+          <block wx:if="{{item.text&&!item.emoji&&!item.movieID&&!item.audioID&&!item.fileIDs&&!item.fileID}}">
+            <view class="text-color">{{item.text}}</view>
+          </block>
+          <!--显示图片区-->
+          <view class="imgList" wx:for="{{item.fileIDs}}" wx:for-item="itemImg" wx:key="index">
+            <image class="img" src='{{itemImg}}' mode='aspectFill' data-img='{{[itemImg,item.fileIDs]}}' bindtap="previewImg"></image>
+          </view>
+
+          <!--显示文件区-->
+          <view class="fileColor" bindtap="downLoadFile" data-id="{{item.fileID}}" data-path="{{item.filePath}}" wx:if="{{item.filePath}}"> {{item.fileName}}
+            {{item.fileSize}}</view>
+
+          <!--显示视频区-->
+          <view wx:if="{{item.moviePath}}">
+            <video src="{{item.movieID}}" class="movieSize"></video>
+          </view>
+
+          <!--显示音频区-->
+          <view wx:if="{{item.audioPath}}">{{item.audioName}} {{item.audioSize}}
+            <image src="{{playUrl}}" class="play" bindtap="audioPlay" data-path="{{item.audioPath}}"></image>
+          </view>
+        </view>
+
+
+
+
+      </view>
+    </view>
+
+    <!--我发送的消息-->
+    <view wx:if="{{me._id == item.userId}}" data-index="{{index}}" id="{{'a' + item._id}}" data-id="{{item.filePath}}" bindlongpress="removeMsg">
+      <!--超过三分钟显示时间-->
+      <view wx:if="{{item.timeOver}}">
+        <view class="timeOver">{{item.time}}</view>
+      </view>
+
+      <view class="info_box2">
+
+        <view class="top-2">
+
+          <!--显示表情区-->
+          <view class="bot-right">
+            <view class="read_root">
+              <view wx:if="{{item.read}}" class="read font_color">已读</view>
+              <view wx:else class="read">未读</view>
+            </view>
+
+            <block wx:if="{{item.emoji}}">
+              <image class="emoji me " src="{{item.emoji}}"></image>
+            </block>
+            <view>
+              <block wx:if="{{item.text&&!item.emoji&&!item.movieID&&!item.audioID&&!item.fileIDs&&!item.fileID}}">
+                <view class="text-color me ">{{item.text}}</view>
+              </block>
+            </view>
+
+            <!--显示图片区  aspectFit保持纵横比 scaleToFill不保持纵横比-->
+
+            <view class="imgList" wx:for="{{item.fileIDs}}" wx:for-item="itemImg" wx:key="index">
+              <image class="img" src='{{itemImg}}' mode='aspectFit' data-img='{{[itemImg,item.fileIDs]}}' bindtap="previewImg"></image>
+            </view>
+
+            <!--显示文件区-->
+            <view class="fileColor" bindtap="downLoadFile" data-id="{{item.fileID}}" data-path="{{item.filePath}}" wx:if="{{item.filePath}}"> {{item.fileName}}
+              {{item.fileSize}}</view>
+
+
+            <!--显示视频区-->
+            <view wx:if="{{item.moviePath}}">
+              <video src="{{item.movieID}}" class="movieSize"></video>
+            </view>
+
+            <!--显示音频区-->
+            <view wx:if="{{item.audioPath}}">{{item.audioName}} {{item.audioSize}}
+              <image src="{{playUrl}}" class="play" bindtap="audioPlay" data-path="{{item.audioPath}}"></image>
+            </view>
+            <!--判断是否已读-->
+
+
+          </view>
+          <image class="headImg2" src="{{item.faceImg}}"></image>
+        </view>
+      </view>
+
+    </view>
+  </block>
+  <view class="bb110"></view>
+</scroll-view>
+
+
+
+<!--底部的输入框-->
+<view class="input_box">
+
+  <view class="input_box1">
+    <input class="pub-input" confirm-type="send" confirm-hold value="{{inputValue}}" bindinput="getInputValue" adjust-position="false" cursor-spacing="22rpx" placeholder="请输入文字"></input>
+    <view class="pub-button" bindtap="publishText">发送</view>
+    <image src="/images/openEmoji.png" class="input_img m20" bindtap="openSendEmoji"></image>
+    <image src="/images/openSendFile.png" class="input_img m20" bindtap="openSendFile"></image>
+  </view>
+
+  <view class="input_box2" wx:if="{{isOn}}">
+    <!--emoji区域-->
+    <scroll-view scroll-y class="emoji_y" wx:if="{{isTabs == 'emoji'}}">
+      <view wx:for="{{emoji_list}}" wx:key="index" class="emoji_scroll">
+        <image class="emoji-bottom" data-src="{{item.imgSrc}}" src="{{item.imgSrc}}" data-name="{{item.name}}" bindtap="sendEmoji"></image>
+      </view>
+    </scroll-view>
+
+    <block wx:if="{{isTabs == 'features'}}">
+      <!--图片-->
+      <view class="feat1" bindtap="ChooseImage">
+        <image class="featImg" src="../../../images/chatSendFile/picture.png"></image>
+        <view class="featTitle">相册</view>
+      </view>
+      <!--文件-->
+      <view class="feat1" bindtap="upFile">
+        <image class="featImg" src="../../../images/chatSendFile/file.png"></image>
+        <view class="featTitle">文件</view>
+      </view>
+      <!--音频-->
+      <view class="feat1" bindtap="upAudio">
+        <image class="featImg" src="../../../images/chatSendFile/audio.png"></image>
+        <view class="featTitle">音频</view>
+      </view>
+      <!--视频-->
+      <view class="feat1" bindtap="upMovie">
+        <image class="featImg" src="../../../images/chatSendFile/movie.png"></image>
+        <view class="featTitle">视频</view>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,48 @@
+<block wx:for="{{dataList}}" wx:key="index">
+  <view class="data_root">
+    <!--头像和姓名区-->
+    <view class="userInfo">
+      <image src="{{item.Img}}" class="user_img"></image>
+      <view class="user_right">
+        <view class="user_choose">
+          <view class="user_name">{{item.name}}</view>
+          <view class="label_right" data-label="{{item.label}}" bindtap="toDetail">#{{item.label}}</view>
+        </view>
+        <view class="date_bottom">{{item.date}}</view>
+      </view>
+    </view>
+
+    <!-- 展示内容区 -->
+    <view class="itemRoot">
+      <view class="font_root">
+        <text class="font_mid">{{item.inputValue}}</text>
+      </view>
+      <view class="imgRoot">
+        <block class="imgList" wx:for="{{item.fileIDs}}" wx:for-item="itemImg" wx:key="index">
+          <image class="img" src='{{itemImg}}' mode='aspectFill' data-img='{{[itemImg,item.fileIDs]}}' bindtap="previewImg"></image>
+        </block>
+      </view>
+    </view>
+
+    <!--点赞评论按钮-->
+    <view class="love_root">
+      <view class="love" >
+        <image src="{{item.touch?'/images/live/love_yes.png':'/images/live/love_no.png'}}" class="img_bottom" bindtap="isLove" data-id="{{item._id}}"></image>
+        <view class="loveNum">{{item.love.length}}</view>
+      </view>
+
+      <view class="chat">
+        <image src="/images/live/chat.png" class="img_bottom" bindtap="sendPost" data-id="{{item}}"></image>
+        <view class="loveNum">{{item.discuss.length}}</view>
+      </view>
+
+      <view class="delete_chat" bindtap="delete" data-id="{{item._id}}" wx:if="{{item._openid==user._openid}}">删除</view>
+
+    </view>
+  </view>
+</block>
+
+
+<view bindtap='adddetial'>
+  <image class="add_icon" src="/images/live/openfabu .png"></image>
+</view>

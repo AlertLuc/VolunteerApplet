@@ -1,0 +1,141 @@
+.area {
+  display: relative;
+  flex-direction: column;
+  align-items: center;
+  height: 320rpx;
+}
+.area::after{
+  content: '';
+  width: 92%;
+  height: 180rpx;
+  position: absolute;
+  z-index: -1;
+  left:4%;
+   margin-top: 140rpx; 
+  border-radius: 0% 0% 1000% 1000%;
+  background: linear-gradient(160deg, #ff9f73, #fae8ad);
+} 
+.img {
+  margin: 0rpx 30rpx 30rpx 30rpx;
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 20rpx;  
+}
+.img image {
+  width: 100%;
+  height: 100%;
+}
+.content {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-radius: 20rpx;
+  box-shadow: 0px 4px 6px 2px rgba(3, 3, 3, 0.12);
+  margin-top: -210rpx;
+}
+.desc{
+  flex: 1;
+  padding: 50rpx;
+}
+.desc text{
+  display: block;
+}
+.nickName{
+  font-size: 38rpx;
+  font-weight: bold;
+  color: rgb(63, 61, 61);
+  margin-left: 100px;
+  margin-top: -95px;
+}
+.addr{
+  font-size: 30rpx;
+  margin: 35rpx 0;
+  margin-left: 100px;
+  margin-top: 10px; 
+  color: rgb(78, 76, 76);
+}
+.list {
+  display: flex;
+  /* margin: 30rpx; */
+  background: #ffffff;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  justify-content: space-between;
+}
+.tittle2 {
+  margin: 30rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.out_ever {
+  margin:15rpx 70rpx  10rpx 10rpx;
+  height: 65rpx;
+  width: 65rpx;
+}
+.img {
+  margin: 30rpx;
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 20rpx;
+}
+.choose {
+  margin: 60rpx 30rpx;
+  height: 45rpx;
+  width: 45rpx;
+}
+.ch_input {
+  font-size: 34rpx;
+  font-weight: bold;
+  margin: 20rpx;
+  width: 76%;
+  padding: 8rpx;
+}
+.modify_ok{
+  margin:15rpx 70rpx  10rpx 10rpx;
+  height: 65rpx;
+  width: 65rpx;
+}
+/* .user_out {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 15px;
+  width: 50%;
+  background-color: #ce7379;
+  color: #f8f8f8f8;
+  border-radius: 60rpx;
+  margin-top: 60rpx;
+} */
+.log_out {
+ font-size: 18px;
+   margin-top: -10px;
+}
+/*分割线样式*/
+.divLine{
+  background: hsl(0, 9%, 87%);
+  width: 88%;
+  height: 6rpx;
+  margin-left: 20px;
+  margin-top: -10px;
+ }
+.btn {
+  width: 60%;
+  height: 100rpx;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-left: 70px;
+  font-size:18px;
+  letter-spacing:5rpx;
+  border-radius: 20rpx;
+  background: linear-gradient(160deg,#fca38d,#ffedbc);
+  color: white;
+  box-shadow: 0px 2px 30px 0px rgba(107, 100, 100, 0.12); 
+}
+.btn::after {
+  border-radius: 90rpx;
+  border: 0;
+}

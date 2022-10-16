@@ -1,0 +1,67 @@
+<!-- 未登录状态 -->
+<!-- <view wx:if="{{!userInfo}}" class="id-card" bindtap="tolog">
+  <view>
+    <image src="../../images/before_login.png" mode="widthFix" style="width: 150rpx; position: relative; top: 50rpx;left: 255rpx;"></image>
+    <view style="color: #852026; text-align: center; margin-top: 60rpx; font-size: 44rpx;font-weight: bolder;">点击登录/注册</view>
+  </view>
+</view> -->
+
+<!-- 登录状态 -->
+<view wx:if="{{userInfo}}" class="id-card" bindtap="goPage">
+  <view class="profile">
+    <image class="profile-img" src="{{userDetail.Img}}"></image>
+    <view class="user-name">{{userInfo.nickName}}</view>
+    <view style="color: rgb(90, 88, 88);">...</view>
+  </view>
+  <view class="circle">
+    <view class="text" wx:if="{{userDetail.isUser}}">
+      <view class="user-id">ID: <view class="font_id">{{userDetail.num}}</view></view>
+      <view class="time-recorder">公益时长: <view class="font_bt">{{hour}}</view> 小时<view class="font_bt">{{min}}</view>分钟</view>
+    </view>
+    <view class="text" wx:else>
+      <view class="user-id">ID:{{userDetail.num}}</view>
+      <view class="time-recorder">我是项目管理员</view>
+    </view>
+    <!--环形进度条-->
+    <view class="left" wx:if="{{userDetail.isUser}}">
+      <view class="left-circle" style="transform:rotate({{leftRate}}deg)"></view>
+    </view>
+    <view class="right" wx:if="{{userDetail.isUser}}">
+      <view class="right-circle" style="transform:rotate({{rightRate}}deg)"></view>
+    </view>
+    <view wx:if="{{differTime==0}}" class="inner">
+      <view wx:if="{{userDetail.isUser}}">已解锁全部勋章</view>
+      <view wx:else>管理员该功能关闭</view>
+    </view>
+    <view class="inner" wx:else>
+      <view> 还差{{differTime}}分钟</view>
+
+    </view>  <view class="read" wx:if="{{userDetail.isUser}}">解锁下一个勋章</view>
+  </view>
+</view>
+
+<view class="card0" wx:if="{{userDetail!=''}}">
+  <view class="tittle2">个人成就</view>
+  <scroll-view class="list0" scroll-x="true">
+    <view class="model_total" wx:for="{{modelL}}" wx:key="index">
+      <image src="{{item}}" class="model" bindtap='previewImage' data-index="{{item}}"></image>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="card" wx:if="{{userDetail!=''}}">
+
+  <view class="list">
+    <button open-type="contact" class="bt_serve ">
+      联系客服
+    </button>
+    <image src="/images/forward.png" class="out_ever"></image>
+    
+  </view>
+
+  <view class="user_out" bindtap="logOut">
+    <view class="log_out">退出登录</view>
+    <image src="/images/forward.png" class="out_ever"></image>
+  </view>
+
+</view>

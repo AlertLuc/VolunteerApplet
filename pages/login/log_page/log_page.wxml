@@ -1,0 +1,59 @@
+<view class='topTabSwiper'>
+  <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}' data-current="0" bindtap='checkCurrent'>志愿者登录</view>
+  <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}' data-current="1" bindtap='checkCurrent'>志愿组织登录</view>
+</view>
+
+<view class="h1">用户登录</view>
+<view class="h2">第一次使用会记录用户的信息</view>
+
+<swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
+
+  <!--志愿者登录-->
+  <swiper-item>
+    <view class="card">
+      <view class="inp">
+        <view class="tittle">账号</view>
+        <input bindinput="getPhone" placeholder="请输入手机号或者身份证号" type="idcard" />
+      </view>
+      <view class="dividing-line"></view>
+      <view class="inp">
+        <view class="tittle">密码</view>
+        <input bindinput="getPassword" placeholder="请输入密码" type="password" />
+      </view>
+      <view class="dividing-line"></view>
+    </view>
+    <!-- <input bindinput="getPhone" placeholder="请输入手机号或者身份证号"  type="idcard"/>
+    <input bindinput="getPassword" placeholder="请输入密码"  type="text"/> -->
+    <button bindtap="user_log" class="button" style="position: relative;top: 10rpx">登录</button>
+    <view class="buttom">
+      <picker range="{{chooseLogin}}" bindchange="chooseLogin">
+        <view class="to_login">注册账号</view>
+      </picker>
+      <view bindtap="to_reUserpassword" class="to_login">忘记密码</view>
+    </view>
+  </swiper-item>
+  <!--志愿组织登录-->
+  <swiper-item>
+    <view class="card">
+      <view class="inp">
+        <view class="tittle">账号</view>
+        <input bindinput="getPhone" placeholder="请输入手机号或者身份证号" type="idcard" />
+      </view>
+      <view class="dividing-line"></view>
+      <view class="inp">
+        <view class="tittle">密码</view>
+        <input bindinput="getPassword" placeholder="请输入密码" type="password" />
+      </view>
+      <view class="dividing-line"></view>
+    </view>
+    <!-- <input bindinput="getPhone" placeholder="请输入手机号或者身份证号"  type="idcard"/>
+    <input bindinput="getPassword" placeholder="请输入密码"  type="text"/> -->
+    <button bindtap="organiza_log" class="button" style="position: relative;top: 10rpx">登录</button>
+    <view class="buttom">
+      <picker range="{{chooseLogin}}" bindchange="chooseLogin">
+        <view class="to_login">注册账号</view>
+      </picker>
+      <view bindtap="to_repassword" class="to_login">忘记密码</view>
+    </view>
+  </swiper-item>
+</swiper>

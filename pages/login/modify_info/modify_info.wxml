@@ -1,0 +1,77 @@
+<view class="area"></view>
+<view class="content">
+  <view class="img"></view>
+  <image src="{{Img}}" class="img" />
+</view>
+<view class="desc">
+  <text class="nickName">{{name}}</text>
+  <text class="addr">Hello volunteer~~~</text>
+</view>
+
+
+<view class="ID" wx:if="{{user.isUser}}">
+  <view class="list">
+    <view class="tittle2" wx:if="{{!isOn2}}">{{phone}}</view>
+    <input type="text" class="ch_input" value="{{Phone}}" wx:else bindinput="getPhone" />
+    <image src="/images/modify.png" class="out_ever" bindtap="changePhone" wx:if="{{!isOn2}}" />
+    <image src="/images/modify_ok.png" class="modify_ok" bindtap="updataUserPhone" wx:else />
+  </view>
+  <view class="divLine"></view>
+
+
+  <view class="list">
+    <view class="tittle2">{{ID}}</view>
+  </view>
+  <view class="divLine"></view>
+  <view class="list">
+    <view class="tittle2" wx:if="{{!isOn3}}">{{school}}</view>
+    <input type="text" class="ch_input" value="{{school}}" wx:else bindinput="getSchool" />
+  </view>
+  <view class="divLine"></view>
+  <view class="list">
+    <view class="tittle2" wx:if="{{!isOn3}}">{{major}}</view>
+    <input type="text" class="ch_input" value="{{major}}" wx:else bindinput="getMajor" />
+  </view>
+  <view class="divLine"></view>
+  <view class="list">
+    <view class="tittle2" wx:if="{{!isOn3}}">{{class}}</view>
+    <input type="number" class="ch_input" value="{{class}}" wx:else bindinput="getClass" />
+    <image src="/images/modify.png" class="out_ever" bindtap="changeClass" wx:if="{{!isOn3}}" />
+    <image src="/images/modify_ok.png" class="modify_ok" bindtap="updataUserClass" wx:else />
+  </view>
+  <view class="divLine"></view>
+</view>
+
+<view class="ID" wx:else>
+  <!-- <view class="list">
+    <view class="tittle2" wx:if="{{!isOn1}}">{{name}}</view>
+    <input type="text" class="ch_input" value="{{name}}" wx:else bindinput="getName" />
+    <image src="/images/modify.png" class="out_ever" bindtap="changeName" wx:if="{{!isOn1}}" />
+    <image src="/images/modify_ok.png" class="modify_ok" bindtap="updataOrganName" wx:else />
+  </view>
+  <view class="divLine"></view> -->
+  <view class="list">
+    <view class="tittle2" wx:if="{{!isOn2}}">{{phone}}</view>
+    <input type="text" class="ch_input" value="{{Phone}}" wx:else bindinput="getPhone" />
+    <image src="/images/modify.png" class="out_ever" bindtap="changePhone" wx:if="{{!isOn2}}" />
+    <image src="/images/modify_ok.png" class="modify_ok" bindtap="updataOrganPhone" wx:else />
+  </view>
+  <view class="divLine"></view>
+  <view class="list">
+    <view class="tittle2">{{ID}}</view>
+  </view>
+  <view class="divLine"></view>
+  <view class="list">
+    <view class="tittle2">{{user.type}}</view>
+  </view>
+  <view class="divLine"></view>
+  <view class="list">
+    <view class="tittle2">{{user.region}}</view>
+  </view>
+  <view class="divLine"></view>
+</view>
+
+
+<view bindtap="unsubscribe">
+  <view class='btn' bindtap="onSave">注销账号</view>
+</view>

@@ -1,0 +1,116 @@
+.data_root {
+  margin: 30rpx;
+
+}
+
+.itemRoot {
+  margin-left: 112rpx;
+  margin-right: 55rpx;
+}
+
+.imgRoot {
+  margin-top: 5rpx;
+}
+
+.imgList {
+  display: inline-block;
+}
+
+.img {
+  display: inline-block;
+  width: 250rpx;
+  height: 250rpx;
+}
+
+
+.font_mid {
+  font-size: large;
+  word-break: break-all;
+}
+
+.userInfo {
+  display: flex;
+  justify-content: left;
+}
+
+.user_img {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+}
+
+.user_name {
+  font-size: 30rpx;
+  margin: 5rpx 20rpx;
+}
+
+.user_choose {
+  display: flex;
+  justify-content: left;
+}
+
+.user_right {
+  display: flex;
+  flex-direction: column;
+}
+
+.label_right {
+  color: #f8bdae;
+  
+  margin: 5rpx 10rpx;
+  font-size: 28rpx;
+}
+
+.date_bottom {
+  margin: 5rpx 20rpx;
+  font-size: 20rpx;
+  font-weight: 420;
+}
+
+.add_icon {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 50px;
+  right: 30px;
+
+}
+
+.img_bottom {
+  height: 50rpx;
+  width: 50rpx;
+  margin-right: 8rpx;
+}
+
+.love_root {
+  margin-left: 112rpx;
+  display: flex;
+  justify-content: left;
+}
+
+.love {
+  width: 130rpx;
+  display: flex;
+  justify-content: left;
+
+}
+
+.chat {
+  width: 130rpx;
+  display: flex;
+  justify-content: left;
+}
+
+.loveNum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22rpx;
+}
+
+.delete_chat {
+  font-size: 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,958 @@
+{
+  "projectname": "%E5%B0%8F%E9%9D%92%E8%9B%99%E4%B8%8D%E8%BF%B7%E8%B7%AF",
+  "setting": {
+    "compileHotReLoad": true
+  },
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "",
+          "pathName": "pages/me/me",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/homePage/homePage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/publish/publish",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/message/chat/chat",
+          "query": "_id=8f75309d629f531f07848053766949bf&title=%E8%AE%B2%E8%A7%A3%E6%8A%A4%E7%9C%BC%E7%9F%A5%E8%AF%86",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/message/message",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/message/chat/chat",
+          "query": "_id=6d85a2b9629f98b5095751654763e8f1&title=%E8%AE%B2%E8%A7%A3%E6%8A%A4%E7%9C%BC%E7%9F%A5%E8%AF%86",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/modify_info/modify_info",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/privacy/privacy",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/message/chat/chat",
+          "query": "_id=16db756f62a15c560669d08c58b70a72&title=%E6%88%91%E6%98%AF%E5%B0%8F%E7%94%BB%E5%AE%B6",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/message/chat/chat",
+          "query": "_id=0a4ec1f962a1c866099881d421b186f4&title=%E6%88%91%E6%98%AF%E5%B0%8F%E7%94%BB%E5%AE%B6",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/message/chat/chat",
+          "query": "_id=0a4ec1f962a1c866099881d421b186f4&title=%E6%88%91%E6%98%AF%E5%B0%8F%E7%94%BB%E5%AE%B6",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/log_in/log_in",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/log_in/log_in",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/log_organization_in/log_organization_in",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/log_in/log_in",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/log_organization_in/log_organization_in",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/message/chat/chat",
+          "query": "_id=0ab5303b62a1ad250883f3cf46f32a6e&title=%E5%BC%A0%E5%B7%A7",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/log_organization_in/log_organization_in",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/message/chat/chat",
+          "query": "_id=0ab5303b62a1ad250883f3cf46f32a6e&title=%E5%BC%A0%E5%B7%A7",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/message/message",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/homePage/detail/detail",
+          "query": "id=0ab5303b629d9d0e07faa77671ac1c83&title=%E2%80%9C%E7%B2%BD%E2%80%9D%E4%BA%AB%E7%AB%A5%E5%BF%83%E4%BC%A0%E6%89%BF%E6%96%87%E5%8C%96",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/homePage/detail/detail",
+          "query": "id=16db756f629cc8e405f179f218f6554e&title=%E6%88%91%E6%98%AF%E5%B0%8F%E7%94%BB%E5%AE%B6",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/homePage/detail/detail",
+          "query": "id=16db756f629cc8e405f179f218f6554e&title=%E6%88%91%E6%98%AF%E5%B0%8F%E7%94%BB%E5%AE%B6",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/homePage/detail/detail",
+          "query": "id=ca780ad5629cc4a6061e75722a3f688c&title=%E8%AE%B2%E8%A7%A3%E6%8A%A4%E7%9C%BC%E7%9F%A5%E8%AF%86",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/homePage/detail/detail",
+          "query": "id=ca780ad5629cc4a6061e75722a3f688c&title=%E8%AE%B2%E8%A7%A3%E6%8A%A4%E7%9C%BC%E7%9F%A5%E8%AF%86",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/participate/participate",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/participate/participate",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/participate/participate",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/participate/participate",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/homePage/detail/detail",
+          "query": "id=16db756f629cc8e405f179f218f6554e&title=%E6%88%91%E6%98%AF%E5%B0%8F%E7%94%BB%E5%AE%B6",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/homePage/detail/detail",
+          "query": "id=16db756f629cc8e405f179f218f6554e&title=%E6%88%91%E6%98%AF%E5%B0%8F%E7%94%BB%E5%AE%B6",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/homePage/detail/detail",
+          "query": "id=16db756f629cc8e405f179f218f6554e&title=%E6%88%91%E6%98%AF%E5%B0%8F%E7%94%BB%E5%AE%B6",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/homePage/detail/detail",
+          "query": "id=16db756f629cc8e405f179f218f6554e&title=%E6%88%91%E6%98%AF%E5%B0%8F%E7%94%BB%E5%AE%B6",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/homePage/detail/detail",
+          "query": "id=16db756f629cc8e405f179f218f6554e&title=%E6%88%91%E6%98%AF%E5%B0%8F%E7%94%BB%E5%AE%B6",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/publish/publish",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/publish/publish",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/manage/manage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/manage/manage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/vol_detail/vol_detail",
+          "query": "id=0a4ec1f962a5f9080a1ed6543d17793c",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/modify_info/modify_info",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/vol_detail/vol_detail",
+          "query": "id=0a4ec1f962a5f9080a1ed6543d17793c",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/manage/manage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/manage/manage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/manage/manage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/manage/manage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/homePage/code/code",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/scanCode/scanCode",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/code/code",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/manage/manage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/participate/participate",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/participate/participate",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/manage/manage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/code/code",
+          "query": "id=6d85a2b962a76a560a69edc9288af24f",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/modify_info/modify_info",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/code/code",
+          "query": "id=6d85a2b962a76a560a69edc9288af24f",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/code/code",
+          "query": "id=6842667962ad6a84062a532e36f9a70a",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/manage/manage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/log_organization_in/log_organization_in",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/manage/manage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/manage/manage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/homePage/search/search",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/log_page/log_page",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/log_in/log_in",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/privacy/privacy",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/homePage/search/search",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/homePage/detail/detail",
+          "query": "id=8f75309d62aea3050938077f5cd50c9a&title=%E5%B0%8F%E5%B0%8F%E7%A7%91%E5%AD%A6%E5%AE%B6",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/participate/participate",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/homePage/search/search",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/modify_info/modify_info",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/participate/participate",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/manage/manage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/homePage/search/search",
+          "query": "num=0",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/participate/participate",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/message/message",
+          "query": "counter=%5B0%2C0%2C0%2C0%5D",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/chat/chat",
+          "query": "_id=0ab5303b62adf9350a0002725d6ea9fb&title=%E6%9D%8E%E9%AB%98",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/homePage/search/search",
+          "query": "num=0",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/participate/participate",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/participate/participate",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/live",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/sort/sort",
+          "query": "sort=%E8%AF%AD%E8%A8%80",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/live",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/sort/sort",
+          "query": "sort=7",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/gameDetail/gameDetail",
+          "query": "id=105",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/live",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/homePage/homePage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/home/home",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/home/home",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/homeTest/homeTest",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/gameDetail/gameDetail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/live",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/participate/participate",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/fabu/fabu",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/fabu/fabu",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/thoughts/thoughts",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/thoughts/thoughts",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/thoughts/thoughts",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/fabu/fabu",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/log_page/log_page",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/fabu/fabu",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/publish/publish",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/log_out/log_out",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/modify_info/modify_info",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/me",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/gameDetail/gameDetail",
+          "query": "index=7",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/fabu/fabu",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/thoughts/thoughts",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/thoughts/thoughts",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/thoughts/thoughts",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/chat/chat",
+          "query": "_id=0ab5303b62adf9350a0002725d6ea9fb&title=%E6%9D%8E%E9%AB%98",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/thoughts/thoughts",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/thoughts_detail/thoughts_detail",
+          "query": "id=%7B%22Img%22%3A%22https%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2Fvi_32%2F2caVZ9iaXwPLUAwaHqrD2y5XrXshsETDdNqenfc5wEFTibb9f0uGn8wSteLVgBSgZXfB7oR3AhR5BIiamQoFvARMA%2F132%22%2C%22_id%22%3A%22f6e08a6462b9fbe409eaec1c7388cdd2%22%2C%22_openid%22%3A%22oDf_q5IaI-m15COcMjTQ77IZ6RGg%22%2C%22createTime%22%3A%7B%7D%2C%22date%22%3A%222022-06-28%202%3A50%3A9%22%2C%22discuss%22%3A%5B%5D%2C%22fileIDs%22%3A%5B%22cloud%3A%2F%2Ftext01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072%2FshowPhoto%2Fundefined1656355808412.png%22%2C%22cloud%3A%2F%2Ftext01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072%2FshowPhoto%2Fundefined1656355808413.png%22%2C%22cloud%3A%2F%2Ftext01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072%2FshowPhoto%2Fundefined1656355808411.png%22%2C%22cloud%3A%2F%2Ftext01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072%2FshowPhoto%2Fundefined1656355808413.png%22%2C%22cloud%3A%2F%2Ftext01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072%2FshowPhoto%2Fundefined1656355808414.png%22%2C%22cloud%3A%2F%2Ftext01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072%2FshowPhoto%2Fundefined1656355808412.png%22%5D%2C%22images%22%3A%5B%7B%22fileType%22%3A%22image%22%2C%22size%22%3A14417%2C%22tempFilePath%22%3A%22http%3A%2F%2Ftmp%2F9yEY264U5F9H31b04648a03c07ad4c04b0a6e1363b91.png%22%7D%2C%7B%22fileType%22%3A%22image%22%2C%22size%22%3A14542%2C%22tempFilePath%22%3A%22http%3A%2F%2Ftmp%2FwKtzJowzpAkZf243c1f0bb476f48b7af29b530275c45.png%22%7D%2C%7B%22fileType%22%3A%22image%22%2C%22size%22%3A14485%2C%22tempFilePath%22%3A%22http%3A%2F%2Ftmp%2Fv9b6rqeYppAW6706ec0ffc635003d1cd68e00e77054c.png%22%7D%2C%7B%22fileType%22%3A%22image%22%2C%22size%22%3A14417%2C%22tempFilePath%22%3A%22http%3A%2F%2Ftmp%2FML6ww58WogZ631b04648a03c07ad4c04b0a6e1363b91.png%22%7D%2C%7B%22fileType%22%3A%22image%22%2C%22size%22%3A14542%2C%22tempFilePath%22%3A%22http%3A%2F%2Ftmp%2FcseR8VEFwWPof243c1f0bb476f48b7af29b530275c45.png%22%7D%2C%7B%22fileType%22%3A%22image%22%2C%22size%22%3A14497%2C%22tempFilePath%22%3A%22http%3A%2F%2Ftmp%2FU8epJT8WehVwd60cc00a103114c50164d31893d365c7.png%22%7D%5D%2C%22inputValue%22%3A%22swdefvscdasxaSXDCFVDVFSCDA%22%2C%22label%22%3A%22%E7%BB%98%E7%94%BB%22%2C%22love%22%3A%5B%226d85a2b962ad679f0b437856251c4935%22%5D%2C%22name%22%3A%22.Book%E6%80%9D%E8%AE%AE%22%2C%22touch%22%3Afalse%7D",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/thoughts/thoughts",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/thoughts_detail/thoughts_detail",
+          "query": "id=%7B%22Img%22%3A%22https%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2Fvi_32%2F2caVZ9iaXwPLUAwaHqrD2y5XrXshsETDdNqenfc5wEFTibb9f0uGn8wSteLVgBSgZXfB7oR3AhR5BIiamQoFvARMA%2F132%22%2C%22_id%22%3A%22f6e08a6462b9fbe409eaec1c7388cdd2%22%2C%22_openid%22%3A%22oDf_q5IaI-m15COcMjTQ77IZ6RGg%22%2C%22createTime%22%3A%7B%7D%2C%22date%22%3A%222022-06-28%202%3A50%3A9%22%2C%22discuss%22%3A%5B%5D%2C%22fileIDs%22%3A%5B%22cloud%3A%2F%2Ftext01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072%2FshowPhoto%2Fundefined1656355808412.png%22%2C%22cloud%3A%2F%2Ftext01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072%2FshowPhoto%2Fundefined1656355808413.png%22%2C%22cloud%3A%2F%2Ftext01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072%2FshowPhoto%2Fundefined1656355808411.png%22%2C%22cloud%3A%2F%2Ftext01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072%2FshowPhoto%2Fundefined1656355808413.png%22%2C%22cloud%3A%2F%2Ftext01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072%2FshowPhoto%2Fundefined1656355808414.png%22%2C%22cloud%3A%2F%2Ftext01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072%2FshowPhoto%2Fundefined1656355808412.png%22%5D%2C%22images%22%3A%5B%7B%22fileType%22%3A%22image%22%2C%22size%22%3A14417%2C%22tempFilePath%22%3A%22http%3A%2F%2Ftmp%2F9yEY264U5F9H31b04648a03c07ad4c04b0a6e1363b91.png%22%7D%2C%7B%22fileType%22%3A%22image%22%2C%22size%22%3A14542%2C%22tempFilePath%22%3A%22http%3A%2F%2Ftmp%2FwKtzJowzpAkZf243c1f0bb476f48b7af29b530275c45.png%22%7D%2C%7B%22fileType%22%3A%22image%22%2C%22size%22%3A14485%2C%22tempFilePath%22%3A%22http%3A%2F%2Ftmp%2Fv9b6rqeYppAW6706ec0ffc635003d1cd68e00e77054c.png%22%7D%2C%7B%22fileType%22%3A%22image%22%2C%22size%22%3A14417%2C%22tempFilePath%22%3A%22http%3A%2F%2Ftmp%2FML6ww58WogZ631b04648a03c07ad4c04b0a6e1363b91.png%22%7D%2C%7B%22fileType%22%3A%22image%22%2C%22size%22%3A14542%2C%22tempFilePath%22%3A%22http%3A%2F%2Ftmp%2FcseR8VEFwWPof243c1f0bb476f48b7af29b530275c45.png%22%7D%2C%7B%22fileType%22%3A%22image%22%2C%22size%22%3A14497%2C%22tempFilePath%22%3A%22http%3A%2F%2Ftmp%2FU8epJT8WehVwd60cc00a103114c50164d31893d365c7.png%22%7D%5D%2C%22inputValue%22%3A%22swdefvscdasxaSXDCFVDVFSCDA%22%2C%22label%22%3A%22%E7%BB%98%E7%94%BB%22%2C%22love%22%3A%5B%226d85a2b962ad679f0b437856251c4935%22%5D%2C%22name%22%3A%22.Book%E6%80%9D%E8%AE%AE%22%2C%22touch%22%3Afalse%7D",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/thoughts/thoughts",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/thoughts/thoughts",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/thoughts_detail/thoughts_detail",
+          "query": "id=%7B%22Img%22%3A%22https%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2Fvi_32%2F2caVZ9iaXwPLUAwaHqrD2y5XrXshsETDdNqenfc5wEFTibb9f0uGn8wSteLVgBSgZXfB7oR3AhR5BIiamQoFvARMA%2F132%22%2C%22_id%22%3A%22f6e08a6462b9fbe409eaec1c7388cdd2%22%2C%22_openid%22%3A%22oDf_q5IaI-m15COcMjTQ77IZ6RGg%22%2C%22createTime%22%3A%7B%7D%2C%22date%22%3A%222022-06-28%202%3A50%3A9%22%2C%22discuss%22%3A%5B%7B%22Img%22%3A%22https%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2Fvi_32%2F2caVZ9iaXwPLUAwaHqrD2y5XrXshsETDdNqenfc5wEFTibb9f0uGn8wSteLVgBSgZXfB7oR3AhR5BIiamQoFvARMA%2F132%22%2C%22content%22%3A%22sxdcsvfscdaxsadsvfc%22%2C%22create%22%3A%7B%7D%2C%22date%22%3A%222022-06-28%2014%3A39%3A7%22%2C%22nickName%22%3A%22.Book%E6%80%9D%E8%AE%AE%22%7D%2C%7B%22Img%22%3A%22https%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2Fvi_32%2F2caVZ9iaXwPLUAwaHqrD2y5XrXshsETDdNqenfc5wEFTibb9f0uGn8wSteLVgBSgZXfB7oR3AhR5BIiamQoFvARMA%2F132%22%2C%22content%22%3A%22cdsvfsdcasdvfbvesdc%22%2C%22create%22%3A%7B%7D%2C%22date%22%3A%222022-06-28%2014%3A39%3A16%22%2C%22nickName%22%3A%22.Book%E6%80%9D%E8%AE%AE%22%7D%2C%7B%22Img%22%3A%22https%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2Fvi_32%2F2caVZ9iaXwPLUAwaHqrD2y5XrXshsETDdNqenfc5wEFTibb9f0uGn8wSteLVgBSgZXfB7oR3AhR5BIiamQoFvARMA%2F132%22%2C%22content%22%3A%22cdsvfsdcasdvfbvesdcadsfd%22%2C%22create%22%3A%7B%7D%2C%22date%22%3A%222022-06-28%2014%3A40%3A8%22%2C%22nickName%22%3A%22.Book%E6%80%9D%E8%AE%AE%22%7D%2C%7B%22Img%22%3A%22https%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2Fvi_32%2F2caVZ9iaXwPLUAwaHqrD2y5XrXshsETDdNqenfc5wEFTibb9f0uGn8wSteLVgBSgZXfB7oR3AhR5BIiamQoFvARMA%2F132%22%2C%22content%22%3A%22axdscsv%20c%22%2C%22create%22%3A%7B%7D%2C%22date%22%3A%222022-06-28%2014%3A40%3A14%22%2C%22nickName%22%3A%22.Book%E6%80%9D%E8%AE%AE%22%7D%2C%7B%22Img%22%3A%22https%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2Fvi_32%2F2caVZ9iaXwPLUAwaHqrD2y5XrXshsETDdNqenfc5wEFTibb9f0uGn8wSteLVgBSgZXfB7oR3AhR5BIiamQoFvARMA%2F132%22%2C%22content%22%3A%22hahhaaaaaaaa%22%2C%22create%22%3A%7B%7D%2C%22date%22%3A%222022-06-28%2015%3A53%3A29%22%2C%22nickName%22%3A%22.Book%E6%80%9D%E8%AE%AE%22%7D%5D%2C%22fileIDs%22%3A%5B%22cloud%3A%2F%2Ftext01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072%2FshowPhoto%2Fundefined1656355808412.png%22%2C%22cloud%3A%2F%2Ftext01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072%2FshowPhoto%2Fundefined1656355808413.png%22%2C%22cloud%3A%2F%2Ftext01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072%2FshowPhoto%2Fundefined1656355808411.png%22%2C%22cloud%3A%2F%2Ftext01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072%2FshowPhoto%2Fundefined1656355808413.png%22%2C%22cloud%3A%2F%2Ftext01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072%2FshowPhoto%2Fundefined1656355808414.png%22%2C%22cloud%3A%2F%2Ftext01-8g94lw8d90a79de6.7465-text01-8g94lw8d90a79de6-1310958072%2FshowPhoto%2Fundefined1656355808412.png%22%5D%2C%22images%22%3A%5B%7B%22fileType%22%3A%22image%22%2C%22size%22%3A14417%2C%22tempFilePath%22%3A%22http%3A%2F%2Ftmp%2F9yEY264U5F9H31b04648a03c07ad4c04b0a6e1363b91.png%22%7D%2C%7B%22fileType%22%3A%22image%22%2C%22size%22%3A14542%2C%22tempFilePath%22%3A%22http%3A%2F%2Ftmp%2FwKtzJowzpAkZf243c1f0bb476f48b7af29b530275c45.png%22%7D%2C%7B%22fileType%22%3A%22image%22%2C%22size%22%3A14485%2C%22tempFilePath%22%3A%22http%3A%2F%2Ftmp%2Fv9b6rqeYppAW6706ec0ffc635003d1cd68e00e77054c.png%22%7D%2C%7B%22fileType%22%3A%22image%22%2C%22size%22%3A14417%2C%22tempFilePath%22%3A%22http%3A%2F%2Ftmp%2FML6ww58WogZ631b04648a03c07ad4c04b0a6e1363b91.png%22%7D%2C%7B%22fileType%22%3A%22image%22%2C%22size%22%3A14542%2C%22tempFilePath%22%3A%22http%3A%2F%2Ftmp%2FcseR8VEFwWPof243c1f0bb476f48b7af29b530275c45.png%22%7D%2C%7B%22fileType%22%3A%22image%22%2C%22size%22%3A14497%2C%22tempFilePath%22%3A%22http%3A%2F%2Ftmp%2FU8epJT8WehVwd60cc00a103114c50164d31893d365c7.png%22%7D%5D%2C%22inputValue%22%3A%22swdefvscdasxaSXDCFVDVFSCDA%22%2C%22label%22%3A%22%E7%BB%98%E7%94%BB%22%2C%22love%22%3A%5B%226d85a2b962ad679f0b437856251c4935%22%5D%2C%22name%22%3A%22.Book%E6%80%9D%E8%AE%AE%22%2C%22touch%22%3Afalse%7D",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/thoughts/thoughts",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/thoughts/thoughts",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/thoughts/thoughts",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/modify_info/modify_info",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/me/publish/publish",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/thoughts/thoughts",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/game/game",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/game/game",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/log_organization_in/log_organization_in",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/log_in/log_in",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/gameDetail/gameDetail",
+          "query": "index=0",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/gameDetail/gameDetail",
+          "query": "index=0",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/modify_info/modify_info",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/message/message",
+          "query": "counter=%5B%5D",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/thoughts/thoughts",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/log_in/log_in",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/modify_info/modify_info",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/thoughts/thoughts",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/live/thoughts/thoughts",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

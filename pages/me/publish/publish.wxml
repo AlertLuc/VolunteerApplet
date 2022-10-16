@@ -1,0 +1,140 @@
+<!--活动的名称-->
+<view class="card">
+  <view class="inp">
+    <view class="tittle">活动名称</view>
+    <input placeholder="请输入活动的名称" bindinput="getName" type="text" />
+  </view>
+  <view class="dividing-line"></view>
+  <view class="inp">
+    <view class="tittle">招聘岗位</view>
+    <input placeholder="请输入招聘的岗位" bindinput="getWork" type="text" />
+  </view>
+  <view class="dividing-line"></view>
+  <view class="inp">
+    <view class="tittle">招募条件</view>
+    <input placeholder="请输入招募的条件" bindinput="getCondition" type="text" />
+  </view>
+  <view class="dividing-line"></view>
+
+  <view class="inp">
+    <view class="tittle">活动标题</view>
+    <input placeholder="请输入活动的标题" bindinput="getTitle" type="text" />
+  </view>
+  <view class="dividing-line"></view>
+
+  <view class="inp">
+    <view class="tittle">活动人数</view>
+    <input placeholder="请输入活动的人数" bindinput="getNum" type="number" />
+  </view>
+
+  <view class="dividing-line"></view>
+  <view class="inp">
+    <view class="tittle">描述文本</view>
+    <input placeholder="请输入描述的文本" bindinput="getContent" type="text" />
+  </view>
+  <view class="dividing-line"></view>
+
+  <view class="inp">
+    <view class="tittle">所在县区</view>
+    <picker mode="region" fields="day" bindchange="chooseRegion">
+      <view class="gender" wx:if="{{!region}}">当前服务所在县区</view>
+      <view wx:else class="gender">{{region}}</view>
+    </picker>
+
+
+  </view>
+  <view class="dividing-line"></view>
+  <view class="inp">
+    <view class="tittle">详细地点</view>
+    <input placeholder="请输入项目的地点" bindinput="getAddress" />
+  </view>
+  <view class="dividing-line"></view>
+  <view class="inp">
+    <view class="tittle">照片上传</view>
+    <input style="width: 384rpx; height: 44rpx; display: block; box-sizing: border-box" placeholder="点击选择活动照片" bindtap="getImg" type="text" />
+  </view>
+</view>
+
+
+<!--自动计算的公益时长-->
+<view class="totalTime">公益时长:{{serveTime}}min</view>
+
+
+
+<view class="p_total">
+
+
+  <!--报名开始时间选择器-->
+  <view class="p_two">
+    <picker mode="date" value="{{signBegin}}" start="{{startDate}}" bindchange="chooseSignBegin" class="picker">
+      <view wx:if="{{signBegin}}">报名开始:{{signBegin}}</view>
+      <view style="color:#999;" wx:if="{{!signBegin}}">报名开始日期</view>
+    </picker>
+
+    <picker mode="time" bindchange="chooseTimeSignBegin" class="picker" value="{{timeSignBegin}}" start="{{startDate}}">
+      <view wx:if="{{timeSignBegin}}">{{timeSignBegin}}</view>
+      <view style="color:#999;" wx:if="{{!timeSignBegin}}">开始时间</view>
+    </picker>
+  </view>
+
+
+  <view class="p_two">
+    <picker mode="date" value="{{signEnd}}" bindchange="chooseSignEnd" class="picker" start="{{startDate}}">
+      <view wx:if="{{signEnd}}">报名结束:{{signEnd}}</view>
+      <view style="color:#999;" wx:if="{{!signEnd}}">报名结束日期</view>
+    </picker>
+
+
+    <!--报名结束时间选择器-->
+    <picker mode="time" bindchange="chooseTimeSignEnd" class="picker">
+      <view wx:if="{{timeSignEnd}}">{{timeSignEnd}}</view>
+      <view style="color:#999;" wx:if="{{!timeSignEnd}}">结束时间</view>
+    </picker>
+
+  </view>
+</view>
+
+
+<view class="p_total">
+
+  <view class="p_two">
+    <!--活动开始时间选择器-->
+
+    <picker mode="date" value="{{actBegin}}" start="{{startDate}}" bindchange="chooseActBegin" class="picker">
+      <view wx:if="{{actBegin}}">活动开始:{{actBegin}}</view>
+      <view style="color:#999;" wx:if="{{!actBegin}}">活动开始日期</view>
+    </picker>
+
+    <!--活动结束时间选择器-->
+    <picker mode="time" bindchange="chooseTimeActBegin" class="picker">
+      <view wx:if="{{timeActBegin}}">{{timeActBegin}}</view>
+      <view style="color:#999;" wx:if="{{!timeActBegin}}">开始时间</view>
+    </picker>
+
+  </view>
+
+
+  <view class="p_two">
+
+    <picker mode="date" :value="{{actEnd}}" start="{{startDate}}" bindchange="chooseActEnd" class="picker">
+      <view wx:if="{{actEnd}}">活动结束:{{actEnd}}</view>
+      <view style="color:#999;" wx:if="{{!actEnd}}">活动结束日期</view>
+    </picker>
+
+
+    <picker mode="time" bindchange="chooseTimeActEnd" class="picker">
+      <view wx:if="{{timeActEnd}}">{{timeActEnd}}</view>
+      <view style="color:#999;" wx:if="{{!timeActEnd}}">结束时间</view>
+    </picker>
+
+  </view>
+</view>
+
+
+
+<!--请选择项目的标签-->
+<view class="totalTime">选择项目的标签</view>
+<view class="sign-setting-border {{item.isSelect?'selected':''}}" wx:for="{{applyList}}" wx:key="key" bindtap='selectApply' data-index='{{index}}'>{{item.Item_Name}}</view>
+
+<!--发布项目按钮-->
+<button class="button" bindtap="publish" style="position: relative; left: -31rpx; top: -220rpx">确认发布</button>

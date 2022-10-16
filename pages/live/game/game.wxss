@@ -1,0 +1,72 @@
+page {
+  overflow: hidden;
+  background: #f8f8f8;
+}
+.card-box {
+  display: inline-block;
+  width: 100%;
+  border-radius: 20rpx;
+
+}
+
+image {
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+  width: 610rpx;
+  height: 860rpx;
+  width: 100%;
+
+}
+
+text {
+  margin: 20rpx 0rpx 20rpx 0rpx;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 100rpx 70rpx;
+  font-size: 28px;
+
+  border-radius: 10rpx;
+
+  /* background: linear-gradient(to bottom right, rgb(238, 237, 166), rgb(253, 204, 164));  */
+
+}
+
+
+.tab_title{
+  margin: 20rpx;
+  border: 1px solid #db7c22;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+swiper {
+  min-height: calc(100vh - 100rpx);
+}
+.swiper-item {
+  width: 100%;
+  padding: 32rpx ;
+  box-sizing: border-box;
+}
+
+/*加背景图片*/
+
+
+ .jxlogo{
+  top: 54rpx;
+  left: 20rpx;
+  width: 713rpx;
+  height: 950rpx;
+  position: absolute;
+  background: rgba(0,0,0,0)
+}
+.game_text{
+  margin-top: 50rpx;
+  font-weight: 400rpx;
+}
+
+  

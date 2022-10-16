@@ -1,0 +1,19 @@
+<swiper indicator-dots="{{false}}" bindchange="handleSwiper" current="{{currentTab}}">
+  <block wx:for="{{list}}" wx:key="index" class="card-box">
+    <swiper-item style="overflow: scroll;">
+
+      <view class="card"  bindtap="toDetail" data-index="{{index}}">
+        <image  mode="{{item.mode}}" src="{{item.src}}">
+          <image class="jxlogo" src="/images/live/frame.png" />
+        </image>
+        <text class="game_text">{{item.detail}}</text>
+      </view>
+      
+      <!-- <view class="card" bindtap="toDetail" data-index="{{index}}">
+        <image src="{{item.src}}" class="card_img"></image>
+        
+      </view> -->
+
+    </swiper-item>
+  </block>
+</swiper>

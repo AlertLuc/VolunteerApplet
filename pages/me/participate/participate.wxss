@@ -1,0 +1,139 @@
+page {
+  background-color: #f8f8f8;
+}
+
+.card {
+  width: 80%;
+  height: 50vh;
+  overflow: hidden;
+  background: #888282;
+  border-radius: 20rpx;
+  margin: auto;
+  margin-top: 40rpx;
+  /* 第一个元素之前再加点距离 */
+}
+
+.tst_img {
+  height: 50vh;
+  z-index: 98;
+
+}
+
+.glass {
+  width: 80%;
+  height: 28vh;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10rpx);
+  position: absolute;
+  /* top: 31.5vh;  */
+  margin-top: -409rpx;
+  border-radius: 20rpx;
+}
+
+.tittle {
+  /* z-index: 99; */
+  /* border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx; */
+  margin-left: 120rpx;
+  margin-top: 17rpx;
+}
+
+.content {
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-top: -110rpx;
+  color: #4d4949;
+}
+
+
+
+.img {
+  width: 100%;
+  height: 400rpx;
+  margin-top: -10rpx;
+  overflow: hidden;
+  border-radius: 90rpx;
+  line-height: 80rpx;
+  /* box-shadow: 5rpx 5rpx 15rpx 5rpx rgb(194, 188, 188); */
+}
+
+.leaderImg {
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+}
+
+.tab {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+  padding: 10rpx 0;
+}
+
+.topTabSwiper {
+  border-bottom: 1px solid #ccc;
+  zoom: 1;
+}
+
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.tabBorer {
+  border-bottom: 1px solid #ff9f73;
+  color:#ff9f73;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper_con {
+  margin: 20rpx;
+  padding: 10rpx 0;
+  width: 95%;
+  top: -80px;
+  height: 860rpx;
+  background: grey;
+  color: rgb(107, 105, 105);
+  border-radius: 100rpx;
+  box-shadow: 0px 2px 30px 0px rgba(117, 112, 112, 0.12);
+  margin-top: 10rpx;
+  font-size: medium;
+}
+
+.manage {
+  height: 60rpx;
+  width: 60rpx;
+  margin-top: -10rpx;
+  margin-left: 380rpx;
+}
+
+.test {
+  font-size: 12px;
+  color: grey;
+  margin-top: -65rpx;
+  margin-left: 440rpx;
+}
+
+.test01 {
+  font-size: 12px;
+  color: grey;
+  margin-top: 0rpx;
+  margin-left: 440rpx;
+}
+
+
+.srco_y {
+  height: 1200rpx;
+
+}
+
+.intro {
+  width: 660rpx;
+  font-size: 24rpx;
+  color: #4d4949;
+  margin: 0 30rpx 10rpx 20rpx;
+}

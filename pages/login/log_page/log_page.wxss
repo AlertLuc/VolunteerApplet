@@ -1,0 +1,121 @@
+.log {
+  margin: 40rpx 20rpx;
+  height: 100rpx;
+  background-color: #faa780;
+}
+
+.log_out {
+  color: #faa780;
+}
+
+.to_login {
+  color: #faa780;
+}
+
+.buttom {
+  margin: 40rpx 32rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*顶部切换*/
+.tab {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 10rpx 0;
+}
+
+.topTabSwiper {
+  border-bottom: 1px solid #ccc;
+  zoom: 1;
+}
+
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.tabBorer {
+  border-bottom: 1px solid #faa780;
+  color: #faa780;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper_con {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 80rpx 0;
+}
+
+.h1 {
+  font-size: 34rpx;
+  font-weight: bolder;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+}
+
+.h2 {
+  font-size: 30rpx;
+  margin-left: 30rpx;
+  color: rgba(0, 0, 0, 50%);
+}
+
+.card {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-radius: 20rpx;
+  height: 220rpx;
+  box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 12%);
+  padding: 10rpx;
+  margin-top: 40rpx;
+  margin-bottom: 70rpx;
+}
+
+input {
+  color: gray;
+  width: 400rpx;
+  margin-left: 40rpx;
+  /* border: 1rpx solid gold; */
+  margin-top: 35rpx;
+  margin-bottom: 5rpx;
+
+}
+
+.tittle {
+  display: flex;
+  margin: 35rpx 28rpx 20rpx 40rpx;
+}
+
+.inp {
+  display: flex;
+}
+
+
+.dividing-line {
+  width: 420rpx;
+  height: 1rpx;
+  background: rgba(0, 0, 0, 10%);
+  margin-left: 80px;
+}
+
+
+.button {
+  width: 60%;
+  background: linear-gradient(160deg, #faa780, #fae8ad);
+  color: white;
+  border-radius: 60rpx;
+  margin-top: 30rpx;
+}
+
+.button::after {
+  border-radius: 90rpx;
+  border: 0;
+}
